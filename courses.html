@@ -20,12 +20,14 @@
     --ink-panel:#0E1B30;
     --paper:#F4F0E7;
     --paper-2:#FBFAF5;
-    --brass:#C0913F;
-    --brass-bright:#DDB263;
-    --slate:#6B7A90;
-    --cream:#ECE6D9;
-    --cream-dim:#B9BFCB;
-    --line-dark:rgba(192,145,63,.22);
+    --brass:#DBA836;
+    --brass-bright:#F4D079;
+    --sky:#5BB0E8;
+    --sky-soft:rgba(91,176,232,.14);
+    --slate:#8593A8;
+    --cream:#EFEAE0;
+    --cream-dim:#CFD7E2;
+    --line-dark:rgba(219,168,54,.22);
     --line-light:rgba(17,32,58,.12);
     --maxw:1140px;
   }
@@ -43,7 +45,7 @@
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
   .eyebrow{
     font-family:"IBM Plex Mono",ui-monospace,monospace;
-    font-size:12px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;
+    font-size:12.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
     color:var(--brass-bright);margin:0 0 22px;
   }
   .eyebrow.dark-on-light{color:#9A7325;}
@@ -75,7 +77,8 @@
   /* HERO */
   .hero{position:relative;overflow:hidden;padding:104px 0 92px;border-bottom:1px solid var(--line-dark);}
   .hero::before{content:"";position:absolute;inset:0;background:
-    radial-gradient(900px 480px at 78% -8%, rgba(192,145,63,.16), transparent 60%),
+    radial-gradient(620px 440px at 14% 6%, rgba(91,176,232,.16), transparent 60%),
+    radial-gradient(900px 480px at 78% -8%, rgba(219,168,54,.22), transparent 60%),
     radial-gradient(700px 500px at 6% 110%, rgba(40,64,104,.40), transparent 60%);
     pointer-events:none;}
   .hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;}
@@ -83,7 +86,7 @@
   .hero h1 .em{color:var(--brass-bright);font-style:italic;}
   .hero-sub{font-size:clamp(17px,2vw,20px);color:var(--cream-dim);max-width:33ch;margin-top:26px;}
   .hero-cta{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap;}
-  .hero-meta{margin-top:40px;display:flex;gap:30px;flex-wrap:wrap;font-size:13.5px;color:var(--slate);}
+  .hero-meta{margin-top:40px;display:flex;gap:30px;flex-wrap:wrap;font-size:14.5px;color:var(--cream-dim);}
   .hero-meta b{color:var(--cream);font-weight:600;}
   .hero-art{position:relative;}
   .hero-art svg{width:100%;height:auto;display:block;}
@@ -118,7 +121,7 @@
   .prod-head .section-lede{color:var(--ink);}
   .prod-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
   .prod{background:var(--paper-2);border:1px solid var(--line-light);border-radius:6px;padding:30px 30px 26px;transition:transform .2s ease,box-shadow .2s ease,border-color .2s;}
-  .prod:hover{transform:translateY(-3px);box-shadow:0 18px 40px -28px rgba(17,32,58,.5);border-color:rgba(192,145,63,.5);}
+  .prod:hover{transform:translateY(-3px);box-shadow:0 18px 40px -28px rgba(17,32,58,.5);border-color:rgba(219,168,54,.5);}
   .prod-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;}
   .prod-name{font-family:"Fraunces",serif;font-weight:600;font-size:24px;color:var(--ink);}
   .prod-tag{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#9A7325;}
@@ -209,7 +212,7 @@
   .dd-menu::before{content:"";position:absolute;top:-18px;left:0;right:0;height:18px;}
   .has-dd:hover .dd-menu,.has-dd:focus-within .dd-menu{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0);}
   .dd-item{display:flex;gap:12px;align-items:flex-start;padding:11px 13px;border-radius:6px;text-decoration:none;transition:background .15s ease;}
-  .dd-item:hover{background:rgba(192,145,63,.10);}
+  .dd-item:hover{background:rgba(219,168,54,.10);}
   .dd-dot{width:7px;height:7px;border-radius:2px;background:var(--brass);transform:rotate(45deg);margin-top:6px;flex:0 0 7px;}
   .dd-item .tx{display:flex;flex-direction:column;}
   .dd-item .nm{font-weight:600;color:var(--cream);font-size:14.5px;}
@@ -276,7 +279,7 @@
       <div class="hero-meta reveal"><span><b>15</b> courses live</span><span><b>1</b> free, always</span><span><b>First lesson</b> free on every course</span></div>
     </div>
     <div class="pp-card-wrap reveal" aria-hidden="true" style="align-items:center;">
-      <div style="width:100%;max-width:392px;background:linear-gradient(158deg,#15263f,#0b1828);border:1px solid rgba(192,145,63,.30);border-radius:16px;padding:26px;">
+      <div style="width:100%;max-width:392px;background:linear-gradient(158deg,#15263f,#0b1828);border:1px solid rgba(219,168,54,.30);border-radius:16px;padding:26px;">
         <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;color:var(--cream-dim);margin-bottom:18px;">ACHIEVEMENT ASSESSMENT</div>
         <div style="display:flex;flex-direction:column;gap:13px;font-size:13.5px;color:var(--cream-dim);">
           <div style="display:flex;justify-content:space-between;"><span>Module exam</span><span style="color:var(--cream);">10 of 20 questions</span></div>

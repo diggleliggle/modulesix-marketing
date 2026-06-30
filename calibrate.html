@@ -20,12 +20,14 @@
     --ink-panel:#0E1B30;
     --paper:#F4F0E7;
     --paper-2:#FBFAF5;
-    --brass:#C0913F;
-    --brass-bright:#DDB263;
-    --slate:#6B7A90;
-    --cream:#ECE6D9;
-    --cream-dim:#B9BFCB;
-    --line-dark:rgba(192,145,63,.22);
+    --brass:#DBA836;
+    --brass-bright:#F4D079;
+    --sky:#5BB0E8;
+    --sky-soft:rgba(91,176,232,.14);
+    --slate:#8593A8;
+    --cream:#EFEAE0;
+    --cream-dim:#CFD7E2;
+    --line-dark:rgba(219,168,54,.22);
     --line-light:rgba(17,32,58,.12);
     --maxw:1140px;
   }
@@ -43,7 +45,7 @@
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
   .eyebrow{
     font-family:"IBM Plex Mono",ui-monospace,monospace;
-    font-size:12px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;
+    font-size:12.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
     color:var(--brass-bright);margin:0 0 22px;
   }
   .eyebrow.dark-on-light{color:#9A7325;}
@@ -75,7 +77,8 @@
   /* HERO */
   .hero{position:relative;overflow:hidden;padding:104px 0 92px;border-bottom:1px solid var(--line-dark);}
   .hero::before{content:"";position:absolute;inset:0;background:
-    radial-gradient(900px 480px at 78% -8%, rgba(192,145,63,.16), transparent 60%),
+    radial-gradient(620px 440px at 14% 6%, rgba(91,176,232,.16), transparent 60%),
+    radial-gradient(900px 480px at 78% -8%, rgba(219,168,54,.22), transparent 60%),
     radial-gradient(700px 500px at 6% 110%, rgba(40,64,104,.40), transparent 60%);
     pointer-events:none;}
   .hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;}
@@ -83,7 +86,7 @@
   .hero h1 .em{color:var(--brass-bright);font-style:italic;}
   .hero-sub{font-size:clamp(17px,2vw,20px);color:var(--cream-dim);max-width:33ch;margin-top:26px;}
   .hero-cta{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap;}
-  .hero-meta{margin-top:40px;display:flex;gap:30px;flex-wrap:wrap;font-size:13.5px;color:var(--slate);}
+  .hero-meta{margin-top:40px;display:flex;gap:30px;flex-wrap:wrap;font-size:14.5px;color:var(--cream-dim);}
   .hero-meta b{color:var(--cream);font-weight:600;}
   .hero-art{position:relative;}
   .hero-art svg{width:100%;height:auto;display:block;}
@@ -118,7 +121,7 @@
   .prod-head .section-lede{color:var(--ink);}
   .prod-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
   .prod{background:var(--paper-2);border:1px solid var(--line-light);border-radius:6px;padding:30px 30px 26px;transition:transform .2s ease,box-shadow .2s ease,border-color .2s;}
-  .prod:hover{transform:translateY(-3px);box-shadow:0 18px 40px -28px rgba(17,32,58,.5);border-color:rgba(192,145,63,.5);}
+  .prod:hover{transform:translateY(-3px);box-shadow:0 18px 40px -28px rgba(17,32,58,.5);border-color:rgba(219,168,54,.5);}
   .prod-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;}
   .prod-name{font-family:"Fraunces",serif;font-weight:600;font-size:24px;color:var(--ink);}
   .prod-tag{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#9A7325;}
@@ -209,7 +212,7 @@
   .dd-menu::before{content:"";position:absolute;top:-18px;left:0;right:0;height:18px;}
   .has-dd:hover .dd-menu,.has-dd:focus-within .dd-menu{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0);}
   .dd-item{display:flex;gap:12px;align-items:flex-start;padding:11px 13px;border-radius:6px;text-decoration:none;transition:background .15s ease;}
-  .dd-item:hover{background:rgba(192,145,63,.10);}
+  .dd-item:hover{background:rgba(219,168,54,.10);}
   .dd-dot{width:7px;height:7px;border-radius:2px;background:var(--brass);transform:rotate(45deg);margin-top:6px;flex:0 0 7px;}
   .dd-item .tx{display:flex;flex-direction:column;}
   .dd-item .nm{font-weight:600;color:var(--cream);font-size:14.5px;}
@@ -229,6 +232,44 @@
   .pnote{font-size:13.5px;color:var(--slate);margin-top:14px;}
   .pcard-row{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:8px;}
   @media (max-width:780px){.pcard-row{grid-template-columns:1fr;}}
+
+
+  /* Calibrate B2B rotating showcase */
+  .cal-show{width:100%;max-width:404px;margin:0 auto;}
+  .cs-frame{position:relative;height:452px;border-radius:18px;padding:24px 24px 56px;
+    background:linear-gradient(158deg,#16294a,#0a1726);border:1px solid rgba(91,176,232,.28);
+    box-shadow:0 46px 90px -46px rgba(0,0,0,.85),0 0 0 1px rgba(219,168,54,.05);overflow:hidden;}
+  .cs-slide{position:absolute;inset:24px 24px 56px;opacity:0;transform:translateY(8px);
+    transition:opacity .6s ease,transform .6s ease;pointer-events:none;}
+  .cs-slide.on{opacity:1;transform:none;}
+  .cs-title{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--sky);margin-bottom:16px;}
+  .cs-foot{position:absolute;left:24px;right:24px;bottom:18px;display:flex;align-items:center;justify-content:space-between;}
+  .cs-name{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;color:var(--cream-dim);}
+  .cs-dots{display:flex;gap:6px;}
+  .cs-dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.18);cursor:pointer;transition:background .2s,width .2s;}
+  .cs-dots i.on{background:var(--brass-bright);width:18px;border-radius:4px;}
+  /* heat map */
+  .hm{display:grid;grid-template-columns:78px repeat(5,1fr);gap:4px;align-items:center;}
+  .hm .hc{font-family:"IBM Plex Mono",monospace;font-size:9px;color:var(--slate);text-align:center;}
+  .hm .ra{font-size:9.5px;color:var(--cream-dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .hm .cl{height:20px;border-radius:3px;}
+  .hm-leg{display:flex;align-items:center;gap:6px;margin-top:14px;font-size:9.5px;color:var(--slate);}
+  .hm-leg i{width:16px;height:8px;border-radius:2px;display:inline-block;}
+  /* generic list rows */
+  .cs-row{display:flex;align-items:center;gap:10px;padding:9px 0;border-top:1px solid rgba(255,255,255,.07);}
+  .cs-row:first-of-type{border-top:none;}
+  .cs-av{width:26px;height:26px;border-radius:50%;flex:0 0 26px;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#0b1726;background:var(--brass-bright);}
+  .cs-rb{flex:1;min-width:0;}
+  .cs-rt{font-size:12.5px;color:var(--cream);font-weight:600;line-height:1.2;}
+  .cs-rs{font-size:10.5px;color:var(--slate);margin-top:2px;}
+  .cs-pill{font-family:"IBM Plex Mono",monospace;font-size:8.5px;letter-spacing:.04em;text-transform:uppercase;padding:3px 8px;border-radius:5px;white-space:nowrap;}
+  .pill-amber{background:rgba(217,138,61,.18);color:#E9A24B;}
+  .pill-green{background:rgba(62,157,107,.20);color:#5BC489;}
+  .pill-sky{background:var(--sky-soft);color:var(--sky);}
+  .bar{height:6px;border-radius:3px;background:rgba(255,255,255,.10);overflow:hidden;margin-top:6px;}
+  .bar i{display:block;height:100%;border-radius:3px;}
+  .cs-big{font-family:"Fraunces",serif;font-weight:600;font-size:40px;color:#5BC489;line-height:1;}
+  .cs-arrow{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--brass-bright);}
 
 </style>
 </head>
@@ -275,13 +316,7 @@
       </div>
       <div class="hero-meta reveal"><span><b>30-day</b> free trial</span><span><b>5 seats</b> to start</span><span><b>No card</b> to begin</span></div>
     </div>
-    <div class="pp-card-wrap reveal" aria-hidden="true" style="align-items:center;">
-      <div style="width:100%;max-width:392px;background:linear-gradient(158deg,#15263f,#0b1828);border:1px solid rgba(192,145,63,.30);border-radius:16px;padding:26px;">
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;color:var(--cream-dim);margin-bottom:16px;">TEAM HEAT MAP &middot; 8 AREAS</div>
-        <div style="display:grid;grid-template-columns:repeat(8,1fr);gap:5px;"><div style="height:26px;border-radius:3px;background:rgba(192,145,63,0.10);"></div><div style="height:26px;border-radius:3px;background:rgba(192,145,63,0.34);"></div><div style="height:26px;border-radius:3px;background:rgba(192,145,63,0.22);"></div><div style="height:26px;border-radius:3px;background:rgba(192,145,63,0.16);"></div><div style="height:26px;border-radius:3px;background:rgba(192,145,63,0.28);"></div><div style="height:26px;border-radius:3px;background:rgba(192,145,63,0.12);"></div><div style="height:26px;border-radius:3px;background:rgba(192,145,63,0.40);"></div><div style="height:26px;border-radius:3px;background:rgba(192,145,63,0.20);"></div><div style="height:26px;border-radius:3px;background:rgba(192,145,63,0.30);"></div><div style="height:26px;border-radius:3px;background:rgba(192,145,63,0.18);"></div><div style="height:26px;border-radius:3px;background:rgba(192,145,63,0.34);"></div><div style="height:26px;border-radius:3px;background:rgba(192,145,63,0.10);"></div><div style="height:26px;border-radius:3px;background:rgba(192,145,63,0.22);"></div><div style="height:26px;border-radius:3px;background:rgba(192,145,63,0.40);"></div><div style="height:26px;border-radius:3px;background:rgba(192,145,63,0.16);"></div><div style="height:26px;border-radius:3px;background:rgba(192,145,63,0.28);"></div><div style="height:26px;border-radius:3px;background:rgba(192,145,63,0.16);"></div><div style="height:26px;border-radius:3px;background:rgba(192,145,63,0.40);"></div><div style="height:26px;border-radius:3px;background:rgba(192,145,63,0.12);"></div><div style="height:26px;border-radius:3px;background:rgba(192,145,63,0.30);"></div><div style="height:26px;border-radius:3px;background:rgba(192,145,63,0.18);"></div><div style="height:26px;border-radius:3px;background:rgba(192,145,63,0.34);"></div><div style="height:26px;border-radius:3px;background:rgba(192,145,63,0.22);"></div><div style="height:26px;border-radius:3px;background:rgba(192,145,63,0.10);"></div></div>
-        <div style="display:flex;justify-content:space-between;margin-top:16px;font-size:11px;color:var(--slate);"><span>Lower</span><span>Validated coverage</span><span>Higher</span></div>
-      </div>
-    </div>
+    <div class="pp-card-wrap reveal" style="align-items:center;"><div class="cal-show reveal" aria-hidden="true"><div class="cs-frame"><div class="cs-slide on" data-name="Team heat map"><div class="cs-title">Team competency heat map</div><div class="hm"><div></div><div class="hc">JD</div><div class="hc">AK</div><div class="hc">MR</div><div class="hc">SP</div><div class="hc">TL</div><div class="ra">Governance</div><div class="cl" style="background:#4FA88C"></div><div class="cl" style="background:#3E9D6B"></div><div class="cl" style="background:#CDA63F"></div><div class="cl" style="background:#4FA88C"></div><div class="cl" style="background:#D98A3D"></div><div class="ra">Stakeholder</div><div class="cl" style="background:#3E9D6B"></div><div class="cl" style="background:#4FA88C"></div><div class="cl" style="background:#4FA88C"></div><div class="cl" style="background:#CDA63F"></div><div class="cl" style="background:#4FA88C"></div><div class="ra">Leadership</div><div class="cl" style="background:#4FA88C"></div><div class="cl" style="background:#4FA88C"></div><div class="cl" style="background:#3E9D6B"></div><div class="cl" style="background:#CDA63F"></div><div class="cl" style="background:#CDA63F"></div><div class="ra">Requirements</div><div class="cl" style="background:#CDA63F"></div><div class="cl" style="background:#4FA88C"></div><div class="cl" style="background:#CDA63F"></div><div class="cl" style="background:#4FA88C"></div><div class="cl" style="background:#D98A3D"></div><div class="ra">Planning</div><div class="cl" style="background:#4FA88C"></div><div class="cl" style="background:#CDA63F"></div><div class="cl" style="background:#4FA88C"></div><div class="cl" style="background:#3E9D6B"></div><div class="cl" style="background:#CDA63F"></div><div class="ra">Budget</div><div class="cl" style="background:#D98A3D"></div><div class="cl" style="background:#CDA63F"></div><div class="cl" style="background:#CDA63F"></div><div class="cl" style="background:#4FA88C"></div><div class="cl" style="background:#D98A3D"></div><div class="ra">Risk</div><div class="cl" style="background:#CDA63F"></div><div class="cl" style="background:#4FA88C"></div><div class="cl" style="background:#D98A3D"></div><div class="cl" style="background:#4FA88C"></div><div class="cl" style="background:#CDA63F"></div><div class="ra">Quality</div><div class="cl" style="background:#4FA88C"></div><div class="cl" style="background:#CDA63F"></div><div class="cl" style="background:#4FA88C"></div><div class="cl" style="background:#CDA63F"></div><div class="cl" style="background:#3E9D6B"></div></div><div class="hm-leg"><span>Gap</span><i style="background:#C2553F"></i><i style="background:#D98A3D"></i><i style="background:#CDA63F"></i><i style="background:#4FA88C"></i><i style="background:#3E9D6B"></i><span>Strong</span></div></div><div class="cs-slide" data-name="People Tools"><div class="cs-title">Development plan &middot; A. Khan</div><div class="cs-row"><div class="cs-av" style="background:var(--brass-bright)">AK</div><div class="cs-rb"><div class="cs-rt">Risk, issue &amp; change</div><div class="cs-rs">Competent <span class="cs-arrow">&rarr;</span> Proficient</div></div><span class="cs-pill pill-amber">Priority gap</span></div><div class="cs-row"><div style="width:26px"></div><div class="cs-rb"><div class="cs-rs">Mapped course</div><div class="cs-rt" style="font-size:12px">Advanced Risk Management</div></div><span class="cs-pill pill-sky">Educate</span></div><div class="cs-row"><div class="cs-av" style="background:var(--brass-bright)">AK</div><div class="cs-rb"><div class="cs-rt">Budget, cost &amp; commercial</div><div class="cs-rs">Practised <span class="cs-arrow">&rarr;</span> Competent</div></div><span class="cs-pill pill-amber">Develop</span></div><div class="cs-row" style="border-top:none;margin-top:6px"><div class="cs-rb"><div class="cs-rs">Target date</div><div class="cs-rt" style="font-size:12px">Q4 2026 &middot; on track</div></div><span class="cs-pill pill-green">Open</span></div></div><div class="cs-slide" data-name="Validation queue"><div class="cs-title">Validation queue</div><div class="cs-row"><div class="cs-av" style="background:var(--brass-bright)">MR</div><div class="cs-rb"><div class="cs-rt">M. Rossi</div><div class="cs-rs">Planning &amp; scheduling &middot; awaiting review</div></div><span class="cs-pill pill-sky">Validate</span></div><div class="cs-row"><div class="cs-av" style="background:var(--sky)">SP</div><div class="cs-rb"><div class="cs-rt">S. Patel</div><div class="cs-rs">Risk &amp; change &middot; awaiting review</div></div><span class="cs-pill pill-sky">Validate</span></div><div class="cs-row"><div class="cs-av" style="background:var(--brass-bright)">TL</div><div class="cs-rb"><div class="cs-rt">T. Lowe</div><div class="cs-rs">Leadership &amp; people &middot; awaiting review</div></div><span class="cs-pill pill-sky">Validate</span></div><div class="cs-row"><div class="cs-av" style="background:var(--sky)">JD</div><div class="cs-rb"><div class="cs-rt">J. Diaz</div><div class="cs-rs">Stakeholder &middot; awaiting review</div></div><span class="cs-pill pill-sky">Validate</span></div></div><div class="cs-slide" data-name="Succession"><div class="cs-title">Succession &middot; Senior PM</div><div class="cs-row"><div class="cs-av" style="background:var(--brass-bright)">MR</div><div class="cs-rb"><div class="cs-rt">M. Rossi</div><div class="bar"><i style="width:100%;background:#3E9D6B"></i></div></div><span class="cs-pill pill-green">Ready now</span></div><div class="cs-row"><div class="cs-av" style="background:var(--brass-bright)">AK</div><div class="cs-rb"><div class="cs-rt">A. Khan</div><div class="bar"><i style="width:72%;background:#4FA88C"></i></div></div><span class="cs-pill pill-amber">1 area to go</span></div><div class="cs-row"><div class="cs-av" style="background:var(--brass-bright)">SP</div><div class="cs-rb"><div class="cs-rt">S. Patel</div><div class="bar"><i style="width:55%;background:#D98A3D"></i></div></div><span class="cs-pill pill-amber">2 areas</span></div></div><div class="cs-slide" data-name="CPD compliance"><div class="cs-title">CPD compliance</div><div style="display:flex;align-items:baseline;gap:10px;margin-bottom:14px"><span class="cs-big">92%</span><span style="font-size:12px;color:var(--cream-dim)">of the team compliant this year</span></div><div class="cs-row"><div class="cs-av" style="background:var(--brass-bright)">JD</div><div class="cs-rb"><div class="cs-rt">J. Diaz</div><div class="bar"><i style="width:100%;background:#3E9D6B"></i></div></div><span class="cs-pill pill-green">30 / 30h</span></div><div class="cs-row"><div class="cs-av" style="background:var(--brass-bright)">TL</div><div class="cs-rb"><div class="cs-rt">T. Lowe</div><div class="bar"><i style="width:60%;background:#D98A3D"></i></div></div><span class="cs-pill pill-amber">18 / 30h</span></div><div class="cs-row"><div class="cs-av" style="background:var(--brass-bright)">SP</div><div class="cs-rb"><div class="cs-rt">S. Patel</div><div class="bar"><i style="width:87%;background:#4FA88C"></i></div></div><span class="cs-pill pill-sky">26 / 30h</span></div></div><div class="cs-foot"><div class="cs-name">Team heat map</div><div class="cs-dots"><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div></div></div></div></div>
   </div>
 </section>
 
@@ -402,5 +437,18 @@
   })();
 </script>
 
+<script>
+(function(){
+  var f=document.querySelector('.cs-frame'); if(!f) return;
+  var sl=f.querySelectorAll('.cs-slide'), dt=f.querySelectorAll('.cs-dots i'), nm=f.querySelector('.cs-name');
+  var i=0,n=sl.length,t=null;
+  function go(k){ sl[i].classList.remove('on'); dt[i].classList.remove('on'); i=(k+n)%n; sl[i].classList.add('on'); dt[i].classList.add('on'); if(nm) nm.textContent=sl[i].getAttribute('data-name'); }
+  function start(){ stop(); t=setInterval(function(){go(i+1);},3600); }
+  function stop(){ if(t){clearInterval(t);t=null;} }
+  f.addEventListener('mouseenter',stop); f.addEventListener('mouseleave',start);
+  dt.forEach(function(d,idx){ d.addEventListener('click',function(){ go(idx); start(); }); });
+  if(!window.matchMedia('(prefers-reduced-motion:reduce)').matches) start();
+})();
+</script>
 </body>
 </html>
