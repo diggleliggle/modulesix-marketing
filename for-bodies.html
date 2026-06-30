@@ -10,6 +10,15 @@
 <meta property="og:description" content="Credentialing, learning, competency and CPD as infrastructure for associations and founders. You own the standard. Module Six runs the rails.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://modulesix.co.uk/for-bodies.html">
+<link rel="canonical" href="https://modulesix.co.uk/for-bodies.html">
+<meta property="og:image" content="https://modulesix.co.uk/assets/og.png">
+<meta property="og:site_name" content="Module Six">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://modulesix.co.uk/assets/og.png">
+<link rel="icon" type="image/png" href="/assets/logo.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Module Six Ltd","url":"https://modulesix.co.uk","logo":"https://modulesix.co.uk/assets/logo.png","description":"Module Six builds and operates the infrastructure modern professional bodies run on: credentialing, learning, competency and CPD, with a member-owned portable record.","sameAs":["https://ipp.pro"]}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -233,6 +242,42 @@
   .pcard-row{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:8px;}
   @media (max-width:780px){.pcard-row{grid-template-columns:1fr;}}
 
+
+  /* mobile menu */
+  .nav-toggle{display:none;width:36px;height:36px;border:0;background:none;cursor:pointer;flex-direction:column;justify-content:center;gap:5px;padding:6px;}
+  .nav-toggle span{display:block;height:2px;background:var(--cream);border-radius:2px;transition:transform .25s ease,opacity .2s ease;}
+  .nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .nav-toggle.open span:nth-child(2){opacity:0;}
+  .nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+  .mnav{position:fixed;top:68px;left:0;right:0;z-index:49;background:#0E1B30;border-bottom:1px solid var(--line-dark);padding:8px 0 16px;box-shadow:0 24px 50px -24px rgba(0,0,0,.7);display:none;flex-direction:column;}
+  .mnav.open{display:flex;}
+  .mnav a{padding:14px 28px;text-decoration:none;color:var(--cream);font-size:17px;border-top:1px solid rgba(255,255,255,.05);}
+  .mnav a:first-child{border-top:none;}
+  .mnav .mnav-group{padding:16px 28px 4px;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);}
+  .mnav .mnav-sub{padding-left:42px;font-size:15px;color:var(--cream-dim);border-top:none;}
+  .mnav .mnav-cta{margin:14px 24px 4px;background:var(--brass);color:#15233b;border-radius:5px;text-align:center;font-weight:600;border-top:none;}
+  @media (max-width:900px){ .nav-toggle{display:flex;} }
+  @media (min-width:901px){ .mnav{display:none !important;} }
+
+
+  /* mobile menu */
+  .nav-burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:8px;margin-left:auto;}
+  .nav-burger span{width:24px;height:2px;background:var(--cream);border-radius:2px;transition:transform .25s ease,opacity .2s ease;}
+  .nav-burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .nav-burger.open span:nth-child(2){opacity:0;}
+  .nav-burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+  .mobile-menu{display:none;position:fixed;top:68px;left:0;right:0;background:var(--ink-2);border-top:1px solid var(--line-dark);border-bottom:1px solid var(--line-dark);padding:14px 28px 26px;z-index:49;box-shadow:0 30px 60px -30px rgba(0,0,0,.7);max-height:calc(100vh - 68px);overflow-y:auto;}
+  .mobile-menu.open{display:block;}
+  .mobile-menu>a{display:block;font-size:17px;color:var(--cream);text-decoration:none;padding:14px 0;border-top:1px solid var(--line-dark);}
+  .mobile-menu>a:first-child{border-top:none;}
+  .mm-group{border-top:1px solid var(--line-dark);padding:8px 0 10px;}
+  .mm-h{display:block;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);padding:8px 0 4px;}
+  .mm-group a{display:block;color:var(--cream-dim);text-decoration:none;padding:10px 0 10px 14px;font-size:16px;}
+  .mm-cta{display:block;margin-top:16px;text-align:center;}
+  @media (max-width:900px){ .nav-burger{display:flex;} .nav-inner > .btn-primary{display:none;} }
+
+  .mobile-menu .mm-label{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);padding:20px 0 2px;}
+  .mobile-menu a.mm-cta{margin-top:18px;border-top:none;background:var(--brass);color:#15233b;font-weight:700;text-align:center;border-radius:10px;padding:15px 0;}
 </style>
 </head>
 <body>
@@ -261,8 +306,22 @@
       <a class="nl" href="about.html">About</a>
     </nav>
     <a class="btn btn-primary" href="index.html#contact">Start a conversation</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header>
+
+<div class="mnav" id="mnav">
+  <a href="the-passport.html">The Passport</a>
+  <div class="mnav-group">Products</div>
+  <a class="mnav-sub" href="https://ipp.pro" target="_blank" rel="noopener">IPP</a>
+  <a class="mnav-sub" href="https://activate.modulesix.io" target="_blank" rel="noopener">Activate</a>
+  <a class="mnav-sub" href="courses.html">Educate</a>
+  <a class="mnav-sub" href="calibrate.html">Calibrate</a>
+  <a href="calibrate.html">For employers</a>
+  <a href="for-bodies.html">For bodies</a>
+  <a href="about.html">About</a>
+  <a class="mnav-cta" href="index.html#contact">Start a conversation</a>
+</div>
 
 
 <a id="top"></a>
@@ -300,7 +359,7 @@
 
 <section class="model" id="model">
   <div class="wrap">
-    <div class="model-head reveal"><p class="eyebrow">The model</p><h2 class="section-lede">Horizontal products. Vertical bodies. One shared spine.</h2><p class="lead-2">Each profession needs its own body, with its own standards, credentials and governance. None of them needs to rebuild the software underneath. Module Six runs the shared rails; each body sits on top with its own framework; the Passport threads the record through all of them.</p></div>
+    <div class="model-head reveal"><p class="eyebrow">The model</p><h2 class="section-lede">Horizontal products. Vertical bodies. One shared spine.</h2><p class="lead-2">Each profession needs its own body, with its own standards, credentials and governance. None of them needs to rebuild the software underneath. Module Six runs the shared rails; each body sits on top with its own framework; the Passport threads the record through all of them. Today that is project professionals; the same rails could carry quantity surveyors, clinical engineers, data professionals, or any field that needs assured competence.</p></div>
         <div class="reveal"><div class="lattice-wrap reveal" aria-label="Diagram: shared product rails running beneath vertical professional bodies, with the Passport as a continuous thread">
       <svg viewBox="0 0 1000 470" xmlns="http://www.w3.org/2000/svg" role="img">
         <style>
@@ -468,5 +527,18 @@
   })();
 </script>
 
+<script>
+(function(){var t=document.querySelector('.nav-toggle'),m=document.getElementById('mnav');if(!t||!m)return;
+t.addEventListener('click',function(){var o=m.classList.toggle('open');t.classList.toggle('open',o);t.setAttribute('aria-expanded',o);});
+m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open');t.classList.remove('open');t.setAttribute('aria-expanded','false');});});})();
+</script>
+<script>
+(function(){
+  var burger=document.querySelector('.nav-burger'), mm=document.getElementById('mobileMenu');
+  if(!burger||!mm) return;
+  burger.addEventListener('click',function(){ var o=mm.classList.toggle('open'); burger.classList.toggle('open',o); burger.setAttribute('aria-expanded',o?'true':'false'); });
+  mm.querySelectorAll('a').forEach(function(a){ a.addEventListener('click',function(){ mm.classList.remove('open'); burger.classList.remove('open'); burger.setAttribute('aria-expanded','false'); }); });
+})();
+</script>
 </body>
 </html>
