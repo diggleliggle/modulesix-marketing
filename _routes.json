@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "description": "A precise include list and an empty exclude list. Exclude takes precedence over include in Pages, so any broad exclude here could stop a blocked path reaching the middleware, which is exactly how the competency library stayed readable on the Calibrate origin after that origin had been fixed. Only the paths listed here invoke a Worker; every other request is served straight from static assets with no Worker cost.",
+  "include": [
+    "/patch-ms-calibrate-nod.py",
+    "/.DS_Store",
+    "/courses/.DS_Store",
+    "/.git/*",
+    "/.github/*",
+    "/.wrangler/*",
+    "/functions/*",
+    "/node_modules/*",
+    "/package.json",
+    "/package-lock.json",
+    "/README.md",
+    "/*.py",
+    "/*.md",
+    "/*.sql",
+    "/*.toml",
+    "/*.lock",
+    "/*.mjs",
+    "/*.yml",
+    "/*.yaml",
+    "/*.env",
+    "/*.bak",
+    "/*.ts"
+  ],
+  "exclude": []
+}
