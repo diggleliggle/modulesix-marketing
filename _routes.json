@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "description": "A precise include list and an empty exclude list. Exclude takes precedence over include in Pages, so any broad exclude here could stop a blocked path reaching the middleware, which is exactly how the competency library stayed readable on the Calibrate origin after that origin had been fixed. Only the paths listed here invoke a Worker; every other request is served straight from static assets with no Worker cost.",
+  "description": "A precise include list and an empty exclude list. Exclude takes precedence over include in Pages, so any broad exclude here could stop a blocked path reaching the middleware, which is exactly how the competency library stayed readable on the Calibrate origin after that origin had been fixed. Only the paths listed here invoke a Worker; every other request is served straight from static assets with no Worker cost. THE LIST IS ALSO WHAT DECIDES WHETHER THE MIDDLEWARE RUNS AT ALL: three live maintenance rehearsals on 14 August 2026 failed on shop-web because the block was written into _middleware.js and this file never routed a page request to it, so a correct middleware ran zero times for \"/\". The document paths after the deny list are what make maintenance mode reachable. Assets are deliberately still absent: only documents need to become a maintenance page, and routing every image and font through a Function is a real cost for no benefit.",
   "include": [
     "/patch-ms-calibrate-nod.py",
     "/.DS_Store",
@@ -23,7 +23,25 @@
     "/*.yaml",
     "/*.env",
     "/*.bak",
-    "/*.ts"
+    "/*.ts",
+    "/",
+    "/index.html",
+    "/404.html",
+    "/404",
+    "/about.html",
+    "/about",
+    "/calibrate.html",
+    "/calibrate",
+    "/candidate.html",
+    "/candidate",
+    "/courses.html",
+    "/courses",
+    "/for-bodies.html",
+    "/for-bodies",
+    "/the-passport.html",
+    "/the-passport",
+    "/validate.html",
+    "/validate"
   ],
   "exclude": []
 }
