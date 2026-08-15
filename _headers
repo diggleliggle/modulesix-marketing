@@ -1,0 +1,21 @@
+# Security headers. Added 15 August 2026, audit finding 25.
+#
+# Ten of the sixteen origins in this estate sent NONE of these. The CSP below is
+# derived from what this origin actually loads, not copied: a policy that lists a
+# provider the site does not use is noise, and one that omits a provider it does
+# use takes the site down.
+#
+# script-src keeps 'unsafe-inline' because every page here is a single HTML file
+# with inline scripts. Removing it means nonces, which is a rewrite per origin.
+#
+# The derivation was wrong once and it is worth knowing why: scanning static
+# <script src> tags MISSED Clerk on id-signin, which builds its script URL in
+# JavaScript. A CSP from that scan would have broken sign-in estate-wide.
+
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'unsafe-inline'; connect-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; frame-src 'none'; worker-src 'self' blob:

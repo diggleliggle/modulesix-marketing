@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  gates:
+    name: Repository gates
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+      # The one check every repository in this estate needs and only calibrate had.
+      # Git is append-only: once real people are committed they are readable at that
+      # commit in every clone and on the remote for good. The pre-commit hook is the
+      # real control; this is the backstop for anyone who did not enable it.
+      - name: No real people in the repository
+        run: node scripts/check-repo-personal-data.mjs

@@ -1,0 +1,15 @@
+#!/bin/sh
+# Refuse a commit that would put real people into this repository.
+#
+# Added 15 August 2026, audit finding 10. This check existed only in calibrate,
+# so sixteen of seventeen repositories had nothing stopping a spreadsheet of real
+# people being committed. Git is append-only and CI is too late by definition.
+#
+# Enable once per clone, because git does not version .git/hooks:
+#
+#     git config core.hooksPath .githooks
+node scripts/check-repo-personal-data.mjs || {
+  echo ""
+  echo "  Commit refused. See the paths above."
+  exit 1
+}
