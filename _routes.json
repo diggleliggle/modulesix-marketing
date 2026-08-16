@@ -41,7 +41,9 @@
     "/the-passport.html",
     "/the-passport",
     "/validate.html",
-    "/validate"
+    "/validate",
+    "/dpa.html",
+    "/dpa"
   ],
   "exclude": []
 }
