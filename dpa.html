@@ -276,6 +276,13 @@
 
   .mobile-menu .mm-label{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);padding:20px 0 2px;}
   .mobile-menu a.mm-cta{margin-top:18px;border-top:none;background:var(--brass);color:#15233b;font-weight:700;text-align:center;border-radius:10px;padding:15px 0;}
+  /* Skip link. WCAG 2.4.1 Level A. Off-screen until focused, so pointer users
+     see no change and a keyboard user can bypass the nav and the product
+     dropdown. Same shape as the one on shop-web/invoice.html. */
+  .ms6-skip{position:fixed;left:-9999px;top:0;z-index:99999}
+  .ms6-skip:focus{left:8px;top:8px;padding:10px 14px;background:#15233b;color:#fff;
+    border-radius:0 0 6px 6px;font:600 14px/1.2 system-ui,-apple-system,sans-serif;
+    text-decoration:none;box-shadow:0 2px 10px rgba(0,0,0,.3)}
 </style>
 <style>
   .legal{max-width:820px;margin:0 auto;padding:0 24px}
@@ -292,6 +299,7 @@
 </style>
 </head>
 <body>
+<a class="ms6-skip" href="#ms6-main">Skip to main content</a>
 
 <header class="nav">
   <div class="wrap nav-inner">
@@ -335,7 +343,7 @@
 </div>
 
 <a id="top"></a>
-<section class="hero">
+<section class="hero" id="ms6-main" tabindex="-1">
   <div class="wrap" style="max-width:880px;">
     <p class="eyebrow reveal">Data processing</p>
     <h1 class="reveal" style="font-size:clamp(2rem,4.4vw,3.1rem);line-height:1.1;margin:.4rem 0 1rem">When you are the controller and we are the processor</h1>
