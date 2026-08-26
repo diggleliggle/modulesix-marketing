@@ -43,6 +43,8 @@
     "/validate.html",
     "/validate",
     "/dpa.html",
+    "/privacy",
+    "/privacy.html",
     "/dpa"
   ],
   "exclude": []
