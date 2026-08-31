@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Calibrate for employers: workforce competence, verified | Module Six</title>
-<meta name="description" content="Calibrate is the competency and CPD platform for managing your workforce’s real capability. A ready-made framework aligned to IPP governance, tailorable to your own or another body’s. Team heat map, People Tools, consultant deployments. Seats from £21.">
+<title>Terms of Service for Organisations — Module Six</title>
+<meta name="description" content="The business contract for organisations buying Module Six seats, licences or a Validate Authority to Work register.">
 <meta name="theme-color" content="#0B1626">
-<meta property="og:title" content="Calibrate for employers: workforce competence, verified | Module Six">
-<meta property="og:description" content="Calibrate is the competency and CPD platform for managing your workforce’s real capability. A ready-made framework aligned to IPP governance, tailorable to your own or another body’s. Team heat map, People Tools, consultant deployments. Seats from £21.">
+<meta property="og:title" content="Privacy: what Module Six does with personal data">
+<meta property="og:description" content="The business contract for organisations buying Module Six seats, licences or a Validate Authority to Work register.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://modulesix.co.uk/calibrate">
-<link rel="canonical" href="https://modulesix.co.uk/calibrate">
+<meta property="og:url" content="https://modulesix.co.uk/terms">
+<link rel="canonical" href="https://modulesix.co.uk/terms">
 <meta property="og:image" content="https://modulesix.co.uk/assets/og.png">
 <meta property="og:site_name" content="Module Six">
 <meta name="twitter:card" content="summary_large_image">
@@ -191,16 +191,6 @@
   .foot-bottom{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-top:26px;flex-wrap:wrap;}
   .foot-bottom small{color:var(--slate);font-size:13px;}
 
-  /* card alignment: name row, body and foot line up across every card in a row */
-  .prod{display:flex;flex-direction:column;}
-  .prod p{flex:1 1 auto;}
-  .prod-foot{margin-top:auto;}
-  @supports (grid-template-rows: subgrid){
-    .prod-grid{grid-template-rows:auto;}
-    .prod{display:grid;grid-template-rows:subgrid;grid-row:span 3;}
-    .prod p{flex:none;}
-  }
-
   @media (max-width:900px){
     .hero-grid,.thesis .wrap,.split .wrap,.proof-grid{grid-template-columns:1fr;gap:40px;}
     .hero-art{order:-1;max-width:460px;}
@@ -254,44 +244,6 @@
   @media (max-width:780px){.pcard-row{grid-template-columns:1fr;}}
 
 
-  /* Calibrate B2B rotating showcase */
-  .cal-show{width:100%;max-width:404px;margin:0 auto;}
-  .cs-frame{position:relative;height:452px;border-radius:18px;padding:24px 24px 56px;
-    background:linear-gradient(158deg,#16294a,#0a1726);border:1px solid rgba(91,176,232,.28);
-    box-shadow:0 46px 90px -46px rgba(0,0,0,.85),0 0 0 1px rgba(219,168,54,.05);overflow:hidden;}
-  .cs-slide{position:absolute;inset:24px 24px 56px;opacity:0;transform:translateY(8px);
-    transition:opacity .6s ease,transform .6s ease;pointer-events:none;}
-  .cs-slide.on{opacity:1;transform:none;}
-  .cs-title{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--sky);margin-bottom:16px;}
-  .cs-foot{position:absolute;left:24px;right:24px;bottom:18px;display:flex;align-items:center;justify-content:space-between;}
-  .cs-name{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;color:var(--cream-dim);}
-  .cs-dots{display:flex;gap:6px;}
-  .cs-dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.18);cursor:pointer;transition:background .2s,width .2s;}
-  .cs-dots i.on{background:var(--brass-bright);width:18px;border-radius:4px;}
-  /* heat map */
-  .hm{display:grid;grid-template-columns:78px repeat(5,1fr);gap:4px;align-items:center;}
-  .hm .hc{font-family:"IBM Plex Mono",monospace;font-size:9px;color:var(--slate);text-align:center;}
-  .hm .ra{font-size:9.5px;color:var(--cream-dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-  .hm .cl{height:20px;border-radius:3px;}
-  .hm-leg{display:flex;align-items:center;gap:6px;margin-top:14px;font-size:9.5px;color:var(--slate);}
-  .hm-leg i{width:16px;height:8px;border-radius:2px;display:inline-block;}
-  /* generic list rows */
-  .cs-row{display:flex;align-items:center;gap:10px;padding:9px 0;border-top:1px solid rgba(255,255,255,.07);}
-  .cs-row:first-of-type{border-top:none;}
-  .cs-av{width:26px;height:26px;border-radius:50%;flex:0 0 26px;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#0b1726;background:var(--brass-bright);}
-  .cs-rb{flex:1;min-width:0;}
-  .cs-rt{font-size:12.5px;color:var(--cream);font-weight:600;line-height:1.2;}
-  .cs-rs{font-size:10.5px;color:var(--slate);margin-top:2px;}
-  .cs-pill{font-family:"IBM Plex Mono",monospace;font-size:8.5px;letter-spacing:.04em;text-transform:uppercase;padding:3px 8px;border-radius:5px;white-space:nowrap;}
-  .pill-amber{background:rgba(217,138,61,.18);color:#E9A24B;}
-  .pill-green{background:rgba(62,157,107,.20);color:#5BC489;}
-  .pill-sky{background:var(--sky-soft);color:var(--sky);}
-  .bar{height:6px;border-radius:3px;background:rgba(255,255,255,.10);overflow:hidden;margin-top:6px;}
-  .bar i{display:block;height:100%;border-radius:3px;}
-  .cs-big{font-family:"Fraunces",serif;font-weight:600;font-size:40px;color:#5BC489;line-height:1;}
-  .cs-arrow{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--brass-bright);}
-
-
   /* mobile menu */
   .nav-toggle{display:none;width:36px;height:36px;border:0;background:none;cursor:pointer;flex-direction:column;justify-content:center;gap:5px;padding:6px;}
   .nav-toggle span{display:block;height:2px;background:var(--cream);border-radius:2px;transition:transform .25s ease,opacity .2s ease;}
@@ -327,9 +279,30 @@
 
   .mobile-menu .mm-label{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);padding:20px 0 2px;}
   .mobile-menu a.mm-cta{margin-top:18px;border-top:none;background:var(--brass);color:#15233b;font-weight:700;text-align:center;border-radius:10px;padding:15px 0;}
+  /* Skip link. WCAG 2.4.1 Level A. Off-screen until focused, so pointer users
+     see no change and a keyboard user can bypass the nav and the product
+     dropdown. Same shape as the one on shop-web/invoice.html. */
+  .ms6-skip{position:fixed;left:-9999px;top:0;z-index:99999}
+  .ms6-skip:focus{left:8px;top:8px;padding:10px 14px;background:#15233b;color:#fff;
+    border-radius:0 0 6px 6px;font:600 14px/1.2 system-ui,-apple-system,sans-serif;
+    text-decoration:none;box-shadow:0 2px 10px rgba(0,0,0,.3)}
+</style>
+<style>
+  .legal{max-width:820px;margin:0 auto;padding:0 24px}
+  .legal h2{font-size:1.45rem;margin:2.6rem 0 .7rem;line-height:1.25}
+  .legal h3{font-size:1.06rem;margin:1.8rem 0 .5rem}
+  .legal p{margin:0 0 1rem;line-height:1.7}
+  .legal ul{margin:0 0 1.15rem 1.15rem;line-height:1.7}
+  .legal li{margin:0 0 .45rem}
+  .legal .docbox{border:1px solid var(--line-light);border-radius:10px;padding:20px 22px;margin:1.4rem 0;background:var(--paper-2)}
+  .legal .docbox .ref{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--slate);margin:0 0 .35rem}
+  .legal .docbox .name{font-size:1.1rem;font-weight:600;margin:0 0 .5rem}
+  .legal .meta{font-size:.875rem;color:var(--slate)}
+  .legal a{color:#11203A;text-decoration:underline;text-underline-offset:3px}
 </style>
 </head>
 <body>
+<a class="ms6-skip" href="#ms6-main">Skip to main content</a>
 
 <header class="nav">
   <div class="wrap nav-inner">
@@ -352,9 +325,9 @@
           <a class="dd-item" role="menuitem" href="https://ipp.pro" target="_blank" rel="noopener"><span class="dd-dot body"></span><span class="tx"><span class="nm">IPP</span><span class="ds">The Institute of Project Professionals, live on the rails</span></span></a>
         </div>
       </div>
-      <a class="nl active" href="calibrate.html">For employers</a>
+      <a class="nl" href="calibrate.html">For employers</a>
       <a class="nl" href="for-bodies.html">For bodies</a>
-      <a class="nl" href="about.html">About</a>
+      <a class="nl active" href="about.html">About</a>
     </nav>
     <a class="btn btn-primary" href="index.html#contact">Start a conversation</a>
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -375,78 +348,198 @@
   <a class="mnav-cta" href="index.html#contact">Start a conversation</a>
 </div>
 
-
 <a id="top"></a>
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <p class="eyebrow reveal">Calibrate &middot; for employers</p>
-      <h1 class="reveal">See your workforce's <span class="em">real competence</span>, not their CVs.</h1>
-      <p class="hero-sub reveal">Calibrate is the competency and CPD platform your people are already credentialed on. The individual record is free, owned for life. You buy seats for the management layer and manage capability from one place.</p>
-      <div class="hero-cta reveal">
-        <a class="btn btn-primary" href="https://calibrate.modulesix.io/start.html" target="_blank" rel="noopener">Start a 30-day trial</a>
-        <a class="btn btn-ghost" href="#pricing">See pricing</a>
-      </div>
-      <div class="hero-meta reveal"><span><b>30-day</b> free trial</span><span><b>5 seats</b> to start</span><span><b>No card</b> to begin</span></div>
-    </div>
-    <div class="pp-card-wrap reveal" style="align-items:center;"><div class="cal-show reveal" aria-hidden="true"><div class="cs-frame"><div class="cs-slide on" data-name="Team heat map"><div class="cs-title">Team competency heat map</div><div class="hm"><div></div><div class="hc">JD</div><div class="hc">AK</div><div class="hc">MR</div><div class="hc">SP</div><div class="hc">TL</div><div class="ra">Governance</div><div class="cl" style="background:#4FA88C"></div><div class="cl" style="background:#3E9D6B"></div><div class="cl" style="background:#CDA63F"></div><div class="cl" style="background:#4FA88C"></div><div class="cl" style="background:#D98A3D"></div><div class="ra">Stakeholder</div><div class="cl" style="background:#3E9D6B"></div><div class="cl" style="background:#4FA88C"></div><div class="cl" style="background:#4FA88C"></div><div class="cl" style="background:#CDA63F"></div><div class="cl" style="background:#4FA88C"></div><div class="ra">Leadership</div><div class="cl" style="background:#4FA88C"></div><div class="cl" style="background:#4FA88C"></div><div class="cl" style="background:#3E9D6B"></div><div class="cl" style="background:#CDA63F"></div><div class="cl" style="background:#CDA63F"></div><div class="ra">Requirements</div><div class="cl" style="background:#CDA63F"></div><div class="cl" style="background:#4FA88C"></div><div class="cl" style="background:#CDA63F"></div><div class="cl" style="background:#4FA88C"></div><div class="cl" style="background:#D98A3D"></div><div class="ra">Planning</div><div class="cl" style="background:#4FA88C"></div><div class="cl" style="background:#CDA63F"></div><div class="cl" style="background:#4FA88C"></div><div class="cl" style="background:#3E9D6B"></div><div class="cl" style="background:#CDA63F"></div><div class="ra">Budget</div><div class="cl" style="background:#D98A3D"></div><div class="cl" style="background:#CDA63F"></div><div class="cl" style="background:#CDA63F"></div><div class="cl" style="background:#4FA88C"></div><div class="cl" style="background:#D98A3D"></div><div class="ra">Risk</div><div class="cl" style="background:#CDA63F"></div><div class="cl" style="background:#4FA88C"></div><div class="cl" style="background:#D98A3D"></div><div class="cl" style="background:#4FA88C"></div><div class="cl" style="background:#CDA63F"></div><div class="ra">Quality</div><div class="cl" style="background:#4FA88C"></div><div class="cl" style="background:#CDA63F"></div><div class="cl" style="background:#4FA88C"></div><div class="cl" style="background:#CDA63F"></div><div class="cl" style="background:#3E9D6B"></div></div><div class="hm-leg"><span>Gap</span><i style="background:#C2553F"></i><i style="background:#D98A3D"></i><i style="background:#CDA63F"></i><i style="background:#4FA88C"></i><i style="background:#3E9D6B"></i><span>Strong</span></div></div><div class="cs-slide" data-name="People Tools"><div class="cs-title">Development plan &middot; A. Khan</div><div class="cs-row"><div class="cs-av" style="background:var(--brass-bright)">AK</div><div class="cs-rb"><div class="cs-rt">Risk, issue &amp; change</div><div class="cs-rs">Competent <span class="cs-arrow">&rarr;</span> Proficient</div></div><span class="cs-pill pill-amber">Priority gap</span></div><div class="cs-row"><div style="width:26px"></div><div class="cs-rb"><div class="cs-rs">Mapped course</div><div class="cs-rt" style="font-size:12px">Advanced Risk Management</div></div><span class="cs-pill pill-sky">Educate</span></div><div class="cs-row"><div class="cs-av" style="background:var(--brass-bright)">AK</div><div class="cs-rb"><div class="cs-rt">Budget, cost &amp; commercial</div><div class="cs-rs">Practised <span class="cs-arrow">&rarr;</span> Competent</div></div><span class="cs-pill pill-amber">Develop</span></div><div class="cs-row" style="border-top:none;margin-top:6px"><div class="cs-rb"><div class="cs-rs">Target date</div><div class="cs-rt" style="font-size:12px">Q4 2026 &middot; on track</div></div><span class="cs-pill pill-green">Open</span></div></div><div class="cs-slide" data-name="Validation queue"><div class="cs-title">Validation queue</div><div class="cs-row"><div class="cs-av" style="background:var(--brass-bright)">MR</div><div class="cs-rb"><div class="cs-rt">M. Rossi</div><div class="cs-rs">Planning &amp; scheduling &middot; awaiting review</div></div><span class="cs-pill pill-sky">Approve</span></div><div class="cs-row"><div class="cs-av" style="background:var(--sky)">SP</div><div class="cs-rb"><div class="cs-rt">S. Patel</div><div class="cs-rs">Risk &amp; change &middot; awaiting review</div></div><span class="cs-pill pill-sky">Approve</span></div><div class="cs-row"><div class="cs-av" style="background:var(--brass-bright)">TL</div><div class="cs-rb"><div class="cs-rt">T. Lowe</div><div class="cs-rs">Leadership &amp; people &middot; awaiting review</div></div><span class="cs-pill pill-sky">Approve</span></div><div class="cs-row"><div class="cs-av" style="background:var(--sky)">JD</div><div class="cs-rb"><div class="cs-rt">J. Diaz</div><div class="cs-rs">Stakeholder &middot; awaiting review</div></div><span class="cs-pill pill-sky">Approve</span></div></div><div class="cs-slide" data-name="Succession"><div class="cs-title">Succession &middot; Senior PM</div><div class="cs-row"><div class="cs-av" style="background:var(--brass-bright)">MR</div><div class="cs-rb"><div class="cs-rt">M. Rossi</div><div class="bar"><i style="width:100%;background:#3E9D6B"></i></div></div><span class="cs-pill pill-green">Ready now</span></div><div class="cs-row"><div class="cs-av" style="background:var(--brass-bright)">AK</div><div class="cs-rb"><div class="cs-rt">A. Khan</div><div class="bar"><i style="width:72%;background:#4FA88C"></i></div></div><span class="cs-pill pill-amber">1 area to go</span></div><div class="cs-row"><div class="cs-av" style="background:var(--brass-bright)">SP</div><div class="cs-rb"><div class="cs-rt">S. Patel</div><div class="bar"><i style="width:55%;background:#D98A3D"></i></div></div><span class="cs-pill pill-amber">2 areas</span></div></div><div class="cs-slide" data-name="CPD compliance"><div class="cs-title">CPD compliance</div><div style="display:flex;align-items:baseline;gap:10px;margin-bottom:14px"><span class="cs-big">92%</span><span style="font-size:12px;color:var(--cream-dim)">of the team CPD complete this year</span></div><div class="cs-row"><div class="cs-av" style="background:var(--brass-bright)">JD</div><div class="cs-rb"><div class="cs-rt">J. Diaz</div><div class="bar"><i style="width:100%;background:#3E9D6B"></i></div></div><span class="cs-pill pill-green">30 / 30h</span></div><div class="cs-row"><div class="cs-av" style="background:var(--brass-bright)">TL</div><div class="cs-rb"><div class="cs-rt">T. Lowe</div><div class="bar"><i style="width:60%;background:#D98A3D"></i></div></div><span class="cs-pill pill-amber">18 / 30h</span></div><div class="cs-row"><div class="cs-av" style="background:var(--brass-bright)">SP</div><div class="cs-rb"><div class="cs-rt">S. Patel</div><div class="bar"><i style="width:87%;background:#4FA88C"></i></div></div><span class="cs-pill pill-sky">26 / 30h</span></div></div><div class="cs-foot"><div class="cs-name">Team heat map</div><div class="cs-dots"><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div></div></div></div></div>
+<section class="hero" id="ms6-main" tabindex="-1">
+  <div class="wrap" style="max-width:880px;">
+    <p class="eyebrow reveal">Legal</p>
+    <h1 class="reveal" style="font-size:clamp(2rem,4.4vw,3.1rem);line-height:1.1;margin:.4rem 0 1rem">Terms of Service for Organisations</h1>
+    <p class="hero-sub reveal">The agreement between Module Six Ltd and an organisation buying seats, licences or a Validate register.</p>
   </div>
 </section>
 
 <section class="paper">
-  <div class="wrap">
-    <div class="reveal" style="max-width:60ch;margin-bottom:42px;">
-      <p class="eyebrow dark-on-light">What you get</p>
-      <h2 class="section-lede" style="color:var(--ink);">A management layer built on verified data.</h2>
+<div class="legal">
+<!-- MS-LEG-002:META -->
+    <p style="font-size:0.875rem;opacity:.75">MS-LEG-002 &nbsp;·&nbsp; First Edition &nbsp;·&nbsp; 31 August 2026 &nbsp;·&nbsp; <a href="assets/docs/MS-LEG-002_Terms_of_Service_for_Organisations_First_Edition.pdf">Download the signed form (PDF)</a></p>
+    <!-- /MS-LEG-002:META -->
+<!-- MS-LEG-002:BODY -->
+    <div class="legal-section">
+      <p>This agreement is made between <b>Module Six Ltd</b>, registered in England and Wales under company number 17311940, whose registered office is Henge Barn, Pury Hill Business Park, Alderton Road, Towcester, Northamptonshire, NN12 7LS (<b>Module Six</b>, <b>we</b>, <b>us</b>), and the organisation named in the Order (<b>the Customer</b>, <b>you</b>).</p>
+      <p>It governs every service you buy from us. <b>Sections 1 to 9 and 12 to 18 apply to all of them.</b> Section 10 applies to Calibrate, Educate, Activate and recruiter access; <b>section 11 applies to Validate</b>. You are bound only by the sections covering what your Order names.</p>
+      <p><b>This is a business contract.</b> The consumer cancellation rights in MS-LEG-001 do not apply to it. MS-LEG-001 governs an individual's own account and continues to apply to your people in their own right, which section 10.3 explains.</p>
+      <p>Where your Order includes <b>Validate</b>, the <b>Data Processing Agreement (MS-LEG-003)</b> applies automatically. It is a separate document because your data protection officer will read and sign it separately, and section 12 sets out how the two fit together.</p>
     </div>
-    <div class="prod-grid">
-      <div class="prod reveal"><div class="prod-top"><span class="prod-name">Team report</span><span class="prod-tag">Insight</span></div><p>Seat utilisation, an eight-area competency heat map, CPD compliance, the validation queue and a member summary. PDF export and copy-as-text.</p><div class="prod-foot"><span class="who">For admins</span></div></div>
-      <div class="prod reveal"><div class="prod-top"><span class="prod-name">People Tools</span><span class="prod-tag">Action</span></div><p>One-to-one prep sheets, development plans, performance and probation reviews, succession snapshots and a board-ready workforce report. Outputs to use, not a dashboard to admire.</p><div class="prod-foot"><span class="who">Admins + team leads</span></div></div>
-      <div class="prod reveal"><div class="prod-top"><span class="prod-name">Org structure</span><span class="prod-tag">Scale</span></div><p>Cost centres, departments and teams, with team leads assigned separately from admins and reporting that rolls up the hierarchy. XLSX bulk import for large teams.</p><div class="prod-foot"><span class="who">For admins</span></div></div>
-      <div class="prod reveal"><div class="prod-top"><span class="prod-name">Deployments</span><span class="prod-tag">Consultancies</span></div><p>Give a client read-only sight of a verified consultant's profile, time-bound, without the consultant leaving their record or the client spending a seat. Access revokes automatically.</p><div class="prod-foot"><span class="who">First of its kind</span></div></div>
+    <div class="legal-section">
+      <h2>1. Definitions</h2>
+      <p><b>Order</b> means the order form, online checkout, quotation or partnership arrangement by which you buy, identifying the services, the quantities, the Term and the Fees.</p>
+      <p><b>Seat</b> means an entitlement for one named individual to use a service. <b>Licence</b> and <b>token</b> have the meanings given in section 10.2.</p>
+      <p><b>Your Users</b> means the individuals you invite, provision or record on the platform under your Order.</p>
+      <p><b>Term</b> means the period stated in the Order, and any renewal of it.</p>
+      <p><b>Register</b> means an Authority to Work register held in Validate, and <b>Customer Personal Data</b> has the meaning given in MS-LEG-003.</p>
     </div>
-  </div>
-</section>
-
-<section class="diff">
-  <div class="wrap">
-    <div class="reveal" style="max-width:58ch;"><p class="eyebrow">Why it sticks</p><h2 class="section-lede" style="color:var(--cream);">Staff keep their record. You keep the talent visible.</h2><p class="lead-2">Because the record belongs to the person and travels via passporting, staff who already hold one show up validated on day one, with no re-onboarding. Competitors lock the profile to the employer, so a leaver loses everything. That difference is why individuals adopt it, which is why it works for you.</p></div>
-  </div>
-</section>
-
-<section class="paper" id="pricing">
-  <div class="wrap">
-    <div class="reveal" style="max-width:60ch;margin-bottom:10px;"><p class="eyebrow dark-on-light">Pricing</p><h2 class="section-lede" style="color:var(--ink);">Individuals free. Seats for the management layer.</h2></div>
-    <div class="pcard-row">
-      <div class="reveal">
-        <table class="ptable"><thead><tr><th>Calibrate seats</th><th>Band</th><th>Per seat / yr</th></tr></thead><tbody>
-          <tr><td>Starter</td><td>1 to 10</td><td class="price">&pound;49</td></tr>
-          <tr><td>Team</td><td>11 to 50</td><td class="price">&pound;39</td></tr>
-          <tr><td>Corporate</td><td>51 to 200</td><td class="price">&pound;29</td></tr>
-          <tr><td>Enterprise</td><td>201 to 1000</td><td class="price">&pound;21</td></tr>
-        </tbody></table>
-      <p style="margin-top:0.9rem;font-size:0.78rem;color:#64748b">All prices are final. No VAT is added: Module Six is not currently VAT registered.</p>
-      </div>
-      <div class="reveal">
-        <table class="ptable"><thead><tr><th>Educate licences</th><th>Band</th><th>Per person / yr</th></tr></thead><tbody>
-          <tr><td>Starter</td><td>1 to 10</td><td class="price">&pound;50</td></tr>
-          <tr><td>Team</td><td>11 to 50</td><td class="price">&pound;40</td></tr>
-          <tr><td>Corporate</td><td>51 to 200</td><td class="price">&pound;30</td></tr>
-          <tr><td>Enterprise</td><td>201 to 1000</td><td class="price">&pound;24</td></tr>
-        </tbody></table>
-      </div>
+    <div class="legal-section">
+      <h2>2. Ordering and provisioning</h2>
+      <p>An Order is accepted when we confirm it or when we provision the services, whichever is earlier. <b>Quantities are the number of seats, licences or tokens stated in the Order</b>, and you may not exceed them.</p>
+      <p>A seat is <b>occupied by one named individual at a time</b>. You may reassign it when a person leaves or changes role. You may not share a seat between people, and you may not give access to anybody outside your organisation unless the Order says so.</p>
+      <p>You may buy additional quantities during the Term. Unless the Order says otherwise they are charged pro rata to the end of the current Term so that everything renews together.</p>
+      <p>Where you were provisioned through a <b>partnership code</b>, that code's terms, including its expiry and whether it may be used more than once, are part of your Order.</p>
     </div>
-    <p class="pnote reveal">The individual Calibrate record is always free. Self-serve up to any band; for 51 seats and above, talk to us for assisted onboarding and an invoice. Want the ready-made project-management standard, live and buyable today? That runs through IPP at <a href="https://ipp.pro/employers" target="_blank" rel="noopener">ipp.pro/employers</a>.</p>
-  </div>
-</section>
-
-<section class="cta-band" id="contact">
-  <div class="wrap reveal">
-    <p class="eyebrow" style="text-align:center;">Get started</p>
-    <h2>Start free, see your real capability in a week.</h2>
-    <p>Spin up a 30-day trial with five seats, no card. Import your team, nominate reviewers, and watch the heat map fill in.</p>
-    <a class="btn btn-primary" href="https://calibrate.modulesix.io/start.html" target="_blank" rel="noopener" style="font-size:16px;padding:15px 30px;">Start a trial</a>
-  </div>
+    <div class="legal-section">
+      <h2>3. Term, renewal and trials</h2>
+      <p>This agreement begins on the date of the Order and continues for the Term. <b>Unless the Order says otherwise it renews automatically</b> for successive periods equal to the initial Term, and either party may prevent renewal by giving <b>30 days' written notice</b> before the end of the current Term.</p>
+      <p>We may change the Fees on renewal, and we will tell you at least <b>60 days</b> before the renewal date. If you do not accept a change you may prevent renewal under the paragraph above.</p>
+      <p><b>3.1 Trials.</b> Where the Order provides a trial it runs for the period stated and grants access <b>only to the services named</b>. A trial of one service does not grant, extend or consume a trial of another.</p>
+      <p><b>At the end of a trial your organisation account is disabled, not deleted.</b> Your administrator can still sign in to buy. Your Users' individual records are not deleted and remain theirs under MS-LEG-001. We do not dissolve the organisation, because a customer who is a day late to buy should not have to be rebuilt from nothing.</p>
+    </div>
+    <div class="legal-section">
+      <h2>4. Your administrators and your Users</h2>
+      <p>You nominate administrators. <b>An administrator acts for you</b>, and we may treat an instruction from one as your instruction, including instructions to invite, suspend or remove a User, to buy, and to export or delete data.</p>
+      <p><b>You are responsible for your Users' compliance with this agreement.</b></p>
+      <p><b>You must tell your Users what you can see about them before you invite them.</b></p>
+    </div>
+    <div class="legal-section">
+      <h2>5. Fees and payment</h2>
+      <p>Fees are those in the Order. Unless it says otherwise they are <b>exclusive of VAT</b>, payable in pounds sterling, and due <b>within 30 days</b> of the date of invoice. Card payments are taken by <b>Stripe</b> and are subject to Stripe's terms.</p>
+      <p><b>Fees are not refundable</b> except where this agreement says so, and a reduction in the seats you use during a Term does not reduce the Fees for that Term.</p>
+      <p><b>5.1 Late payment.</b> If an invoice is overdue we may charge interest at <b>4% above the Bank of England base rate</b>, and may <b>suspend access under section 15</b> after written notice and a reasonable opportunity to pay. <b>Payment lifts a suspension.</b> Suspension for non-payment deletes nothing and does not end the Term, and you remain liable for the Fees.</p>
+    </div>
+    <div class="legal-section">
+      <h2>6. Acceptable use</h2>
+      <p>You and your Users must use the platforms <b>lawfully, honestly, and for the purpose they were provided</b>. In particular you must not, and must not permit any User to:</p>
+      <ul>
+        <li><b>share credentials</b>, or let anybody use an account other than the individual it belongs to;</li>
+        <li><b>impersonate</b> another person or organisation, or misrepresent an association with one;</li>
+        <li><b>circumvent access controls</b>, or obtain content, a credential or a discount not paid for or not earned;</li>
+        <li>submit <b>false or misleading information</b> to any platform, including assessments, evidence, competence and authorisation records, outcome claims and applications;</li>
+        <li><b>alter, forge or misrepresent</b> a Passport, a public register entry or a certificate check;</li>
+        <li><b>copy, extract, aggregate or store</b> data about members or workers, in bulk or one record at a time, by automated means or by hand, or build or enrich a database, directory or list from anything on the platforms;</li>
+        <li>use <b>automated tools to scrape, crawl or harvest</b> any platform, or use platform data to <b>train or evaluate any model</b>;</li>
+        <li><b>copy, reproduce or distribute course content</b> outside the platform, including inside your own organisation; or</li>
+        <li>use the platforms in a way that could <b>damage, disable or impair</b> them, or probe them for vulnerabilities without our written permission.</li>
+      </ul>
+      <p><b>6.1 No general licence is granted.</b> Some of what the platforms publish is public: the register of members, a Passport shared at a link, a certificate check. <b>Publication for a purpose is not a licence for any purpose.</b> No permission is granted to anybody, by any means, to use data available on or through the platforms for any purpose other than the one it was made available for. Any other use requires the express consent of the individual concerned, given either through a tool we provide for the purpose and used as intended, or in writing.</p>
+      <p><b>6.2 Content about third parties.</b> Where you or a User submit content naming or describing another person or organisation, <b>you warrant that it may lawfully be disclosed, that it is accurate and not misleading, that it is not defamatory or otherwise infringing, and that publishing it breaches no obligation owed to anybody</b>. We cannot check this and we do not. If we receive a complaint we may hide or remove the content while we consider it, and may remove it permanently.</p>
+      <p>Breach of this section is a breach of this agreement and section 15 applies.</p>
+    </div>
+    <div class="legal-section">
+      <h2>7. Intellectual property</h2>
+      <p>The platforms, the course content, the competency framework and library, assessment materials, role profiles, guidance and templates belong to <b>Module Six Ltd</b>. Your Order gives you and your Users a <b>non-exclusive, non-transferable right to use them for the Term, for your own internal business purposes</b>, and nothing more.</p>
+      <p><b>You may not use any of it to build a competing framework, assessment or product</b>, and you may not republish it or incorporate it into anything you supply to a third party.</p>
+      <p>What you and your Users put into the platform remains yours or theirs, as sections 10.3 and 11 set out. Nothing here transfers ownership of it to us.</p>
+    </div>
+    <div class="legal-section">
+      <h2>8. Confidentiality</h2>
+      <p>Each party will keep the other's confidential information confidential, use it only to perform this agreement, and disclose it only to those who need it and are under an equivalent duty. This does not apply to information that is public through no breach of this section, was already lawfully known, is independently developed, or must be disclosed by law, and it survives termination for <b>three years</b>.</p>
+    </div>
+    <div class="legal-section">
+      <h2>9. Services we rely on</h2>
+      <p>Parts of the service depend on <b>third party services</b> that operate independently of Module Six Ltd, have their own terms and privacy policies, and are not under our control. Payment processing is handled entirely by <b>Stripe</b> and you are bound by Stripe's terms for it.</p>
+      <p>We remain responsible for the service we provide to you. <b>We are not responsible for the operation, content or data practices of a third party service.</b> Every party that processes personal data on our behalf is named in MS-LEG-004, and for a Register in MS-LEG-003, which also sets out how a change is notified.</p>
+      <p><b>We do not use your data, or your Users' data, to train any artificial intelligence model, and no artificial intelligence provider processes it today.</b> If we introduce automated or artificial intelligence analysis of personal data we will name the provider in MS-LEG-004 first, and for a Register we will give notice under MS-LEG-003 before any data reaches it.</p>
+    </div>
+    <div class="legal-section">
+      <h2>10. Calibrate, Educate, Activate and recruiter access</h2>
+      <p>This section applies where your Order names any of them. <b>Module Six Ltd is the data controller for all of it</b>, and section 12 explains what that means.</p>
+      <p><b>10.1 Calibrate.</b> Competence assessment and validation, bought as <b>seats</b>. Your reviewers and administrators can see a seat holder's competency record, CPD log and evidence, for professional development oversight and nothing beyond it. You may nominate reviewers; who may act as one, and to what standard, is set by IPP-ASM-003. Portfolio evidence is capped at <b>10MB per file</b> and limited to the file types the platform accepts. A role profile or framework you create stays private to you unless you agree to it being promoted into the standard library.</p>
+      <p><b>10.2 Educate.</b> Course content, module examinations and certificates, bought as a <b>licence</b> for a named individual or as a <b>token pool</b> you allocate. <b>A redeemed token is consumed</b> and is not returned if the individual leaves, does not complete or does not pass, because the entitlement was granted when it was redeemed. On termination, unredeemed tokens lapse and redeemed tokens are anonymised rather than deleted, so your record of what you paid for survives without holding a former user's data.</p>
+      <p><b>10.3 Whose record it is.</b> <b>An individual's competency record, CPD log, evidence and qualifications belong to that individual, not to you</b>, even where you paid for the seat. Buying a seat buys access for a person; it does not buy rights over what that person records.</p>
+      <ul>
+        <li><b>A User may leave your organisation at any time</b>, from their own profile settings, without asking you. Your access to their record ends immediately.</li>
+        <li><b>You may not transfer, export or retain a copy of an individual's record after they have left</b>, and your administrators are responsible for seeing that this is observed.</li>
+        <li><b>You cannot instruct us to delete an individual's record</b>, and we will refuse if you ask. It is not yours to delete.</li>
+        <li>Reports and aggregates about your organisation, produced while a person held your seat, remain available to you.</li>
+      </ul>
+      <p><b>10.4 Activate.</b> Onboarding into the ecosystem: provisioning your organisation, your administrators and your initial users, rather than a standing product.</p>
+      <p><b>10.5 Recruiter and agency access.</b> Where your Order records you as a recruitment agency with access to the talent window inside Candidate, <b>what you can see is what a member has chosen to publish and nothing else</b>. Access is limited to members who have published a candidate profile and marked themselves open to work; either switch, turned off, ends your visibility of them at once. You must use member data <b>only to identify and approach candidates for genuine opportunities</b>, must not copy, retain, resell, redistribute or aggregate it, must keep the distinction the platform draws between what the Institute has verified and what the member has stated about themselves, and must not represent one to a client as the other. <b>What a member publishes may name their former clients and projects. That is the member's disclosure and their warranty, not ours</b>, and you may not treat the presence of a name as evidence they were entitled to give it. You are solely responsible for your own obligations as a controller for anything you record in your own systems.</p>
+      <p><b>10.6 Institute membership.</b> You may pay for membership on behalf of your people. <b>Paying for a membership does not make you a party to it.</b> The grade and standing are the individual's, conduct is dealt with under IPP-GOV-001 without reference to you, and a membership you paid for runs to the end of the period paid for even if the individual leaves you.</p>
+    </div>
+    <div class="legal-section">
+      <h2>11. Validate</h2>
+      <p>This section applies where your Order names <b>Validate</b>. <b>You are the data controller and Module Six Ltd is the processor</b>. MS-LEG-003 is the agreement that governs it.</p>
+      <p><b>11.1 What it is.</b> An Authority to Work register: a record of which of your workers hold which competencies, when they were issued and when they expire, what each worker is authorised to do, and the evidence supplied in support. It issues expiry reminders and produces reports.</p>
+      <p><b>11.2 Validate stands alone.</b> Validate requires no Institute membership: access is an entitlement on the account granted from your seat count and it never reads a membership tier. It does not depend on anything in section 10, and the Institute's standards, grades, designations and complaints route do not apply to a Register or to the people on it. <b>A Register is not a competency assessment and produces no credential.</b></p>
+      <p><b>11.3 Seats.</b> A seat entitles one named individual, typically a manager or compliance administrator, to operate the Register. <b>The workers recorded on it do not need seats</b> and in most deployments hold no account at all.</p>
+      <p><b>11.4 What you may put on it.</b> You decide who appears and what evidence is held. <b>You must not upload data falling within Article 9 or Article 10 of the UK GDPR</b> unless we have first agreed additional measures in writing: Validate is not designed to hold it and its evidence store applies no additional controls for it. A medical fitness certificate may be recorded as held, valid and expiring on a date; the underlying medical information must not be uploaded. Evidence documents are capped at <b>10MB per file</b> and are stored as supplied, not inspected, verified or interpreted by us.</p>
+      <p><b>11.5 Reminders.</b> The platform issues reminders before a recorded competency expires, to the addresses you record. <b>A reminder is a convenience and not a control.</b> We do not guarantee delivery, and <b>the absence of one is not evidence that nothing has expired</b>.</p>
+      <p><b>11.6 What the Register does not do.</b></p>
+      <ul>
+        <li><b>It does not decide competence.</b> It records what you have recorded.</li>
+        <li><b>It does not verify evidence.</b> We do not check that a certificate is genuine or that an issuing body exists. Where the platform offers a scheme lookup, the result is that scheme's answer and not ours.</li>
+        <li><b>It does not grant authority to work</b>, and a status shown in it does not make a person authorised or unauthorised in law or under your own procedures.</li>
+        <li><b>It does not discharge your legal duties</b>, including under health and safety legislation, and transfers none of them to us.</li>
+      </ul>
+      <p><b>You remain solely responsible for every decision taken on the basis of a Register</b>, including a decision to deploy, to withhold work, or to certify to a third party that your workforce is cleared.</p>
+      <p><b>11.7 Retention.</b> We apply <b>no retention period of our own</b> to a Register. Records are kept until you delete them or this section ends, because how long a competence record should be kept depends on your regulatory obligations. You may specify a period in the Order and we will apply it.</p>
+      <p><b>11.8 Ending Validate alone.</b> This section may be terminated without terminating the rest of this agreement, on the notice in section 16. Return and deletion of the Register are governed by MS-LEG-003, which gives you the choice and sets a ninety-day default so that inaction does not mean indefinite retention.</p>
+    </div>
+    <div class="legal-section">
+      <h2>12. Personal data</h2>
+      <p><b>Which of us is the controller depends on the service, and it is not the same answer throughout.</b></p>
+      <p><b>12.1</b> For everything in section 10, <b>Module Six Ltd is the controller</b>. We decide what personal data is held and why and we answer to the individuals concerned, under MS-LEG-004. <b>You are not the controller of your Users' records and cannot instruct us to delete them</b>, because they belong to the individual and follow them when they leave.</p>
+      <p><b>12.2</b> For a Register under section 11, <b>you are the controller and we are the processor</b>. <b>MS-LEG-003 applies automatically and only where section 11 applies.</b> You cannot opt out of it: it is the agreement Article 28 requires.</p>
+      <p><b>12.3 What that means in practice.</b></p>
+      <ul>
+        <li>Most individuals on a Register hold no account with us and have never dealt with us. <b>Providing the information Articles 13 and 14 require is your duty as controller. We have no route to do it and do not undertake to.</b></li>
+        <li>A worker who wants a Register record changed or removed asks you. We act on your instruction and not theirs. If they contact us we will show them what we hold, tell them the controller is you, and tell you they asked.</li>
+        <li>At the end of the agreement you choose: we return the Register, delete it, or return then delete.</li>
+      </ul>
+      <p><b>12.4 Your indemnity.</b> You <b>indemnify us</b> against any claim, fine or cost arising from personal data you upload or instruct us to process in breach of section 13 or of MS-LEG-003, including where you had no lawful basis for it or failed to give the individuals concerned the information the law requires.</p>
+    </div>
+    <div class="legal-section">
+      <h2>13. Warranties</h2>
+      <p>We warrant that we will provide the services with <b>reasonable care and skill</b> and that we have the right to grant the rights in section 7.</p>
+      <p>You warrant that you have the right to provide the data you upload and to instruct the processing you instruct, and that your use will comply with the law.</p>
+      <p><b>Except as stated in this agreement all other warranties are excluded</b> to the extent the law permits. We do not warrant that the services will be uninterrupted or error free, and we do not guarantee any business, recruitment or compliance outcome.</p>
+      <p><b>13.1 Verification is an aid to a decision, not a substitute for making one.</b> Where you rely on a member's verified profile, a Passport, a certificate check or a competence record, <b>you remain responsible for your own due diligence, including references and any statutory checks</b>. We review what is submitted to us and there are limits to what we can validate. <b>We do not accept liability for a recruitment, engagement or deployment decision you take on the strength of what we publish.</b></p>
+    </div>
+    <div class="legal-section">
+      <h2>14. Limitation of liability</h2>
+      <p>Nothing in this agreement excludes or limits liability for <b>death or personal injury caused by negligence, for fraud or fraudulent misrepresentation</b>, or for anything else that cannot lawfully be excluded.</p>
+      <p>Subject to that, neither party is liable for <b>loss of profit, revenue, business, goodwill, anticipated saving, or any indirect or consequential loss</b>, however arising.</p>
+      <p>Subject to the two paragraphs above, each party's total liability in any 12-month period is limited to <b>the Fees paid or payable in the 12 months before the first event giving rise to the claim</b>.</p>
+      <p><b>That cap does not apply to</b> your obligation to pay the Fees, either party's breach of section 8, your breach of section 7, or your indemnity in section 12.4.</p>
+    </div>
+    <div class="legal-section">
+      <h2>15. Suspension</h2>
+      <p>We may suspend your access, or a User's, where <b>an invoice is overdue</b>, where continued use presents a <b>security risk</b> to the platform or another customer, where required by law, or on a <b>material breach</b> of this agreement.</p>
+      <p>Except where a security risk or the law requires immediate action, <b>we will give you notice and a reasonable opportunity to put it right first</b>. A suspension is lifted when the cause is removed. <b>Suspension deletes nothing.</b></p>
+    </div>
+    <div class="legal-section">
+      <h2>16. Termination, and what happens to data</h2>
+      <p>Either party may terminate this agreement, or section 11 alone, on <b>30 days' written notice</b> if the other is in material breach and has not remedied it within that period, or immediately if the other becomes insolvent.</p>
+      <p>You may terminate immediately, with a <b>pro rata refund</b> of Fees paid for the unexpired Term, if we make a change that materially reduces the services and do not put it right within 30 days of your notice.</p>
+      <p>On termination your access ends and any Fees outstanding fall due.</p>
+      <ul>
+        <li><b>Section 10 services.</b> Your organisation's own records are exportable on request for 30 days. <b>Your Users' individual records are not yours and are not affected</b>: they remain with the individual under MS-LEG-001.</li>
+        <li><b>Validate.</b> Return and deletion of the Register are governed by MS-LEG-003.</li>
+      </ul>
+    </div>
+    <div class="legal-section">
+      <h2>17. Changes to this agreement</h2>
+      <p>We may update this agreement. It carries an edition and a date, and <b>the version you accepted is recorded</b>. Where a change is material we will give you <b>30 days' written notice</b> and, if you do not accept it, you may terminate at the end of that period with a pro rata refund of Fees paid for the unexpired Term. A change required by law, or one that does not reduce your rights, takes effect on notice.</p>
+    </div>
+    <div class="legal-section">
+      <h2>18. General</h2>
+      <p><b>Notices</b> to us go to <a href="mailto:hello@ipp.pro">hello@ipp.pro</a>, and for anything under MS-LEG-003 to <a href="mailto:data@modulesix.co.uk">data@modulesix.co.uk</a>. Notices to you go to the contact named in the Order.</p>
+      <p><b>Assignment.</b> Neither party may assign without the other's written consent, not to be unreasonably withheld, except to a successor of substantially the whole of its business.</p>
+      <p><b>Entire agreement.</b> This agreement, MS-LEG-003 where it applies, and the Order are the whole agreement between us and replace anything said or written before. Neither party relies on any statement not set out in them. This does not limit liability for fraudulent misrepresentation.</p>
+      <p><b>No partnership.</b> Nothing here creates a partnership, joint venture or employment relationship.</p>
+      <p><b>Third parties.</b> Nobody other than the parties may enforce this agreement under the Contracts (Rights of Third Parties) Act 1999.</p>
+      <p><b>Severance.</b> If any provision is held unenforceable, the rest continues in force.</p>
+      <p><b>Governing law.</b> This agreement is governed by the law of <b>England and Wales</b>, and the courts of England and Wales have exclusive jurisdiction.</p>
+    </div>
+    <div class="legal-section">
+      <h2>19. Signature</h2>
+      <p>Where an Order is placed online, acceptance at checkout by a person authorised to bind the Customer has the same effect as signature below.</p>
+      <p>Signed for and on behalf of <b>Module Six Ltd</b>:</p>
+      <p>Name  ________________________     Position  ________________________</p>
+      <p>Signature  ________________________     Date  ________________________</p>
+      <p>Signed for and on behalf of <b>the Customer</b>:</p>
+      <p>Name  ________________________     Position  ________________________</p>
+      <p>Signature  ________________________     Date  ________________________</p>
+    </div>
+    <!-- /MS-LEG-002:BODY -->
+</div>
 </section>
 
 <footer>
@@ -517,19 +610,6 @@
   })();
 </script>
 
-<script>
-(function(){
-  var f=document.querySelector('.cs-frame'); if(!f) return;
-  var sl=f.querySelectorAll('.cs-slide'), dt=f.querySelectorAll('.cs-dots i'), nm=f.querySelector('.cs-name');
-  var i=0,n=sl.length,t=null;
-  function go(k){ sl[i].classList.remove('on'); dt[i].classList.remove('on'); i=(k+n)%n; sl[i].classList.add('on'); dt[i].classList.add('on'); if(nm) nm.textContent=sl[i].getAttribute('data-name'); }
-  function start(){ stop(); t=setInterval(function(){go(i+1);},3600); }
-  function stop(){ if(t){clearInterval(t);t=null;} }
-  f.addEventListener('mouseenter',stop); f.addEventListener('mouseleave',start);
-  dt.forEach(function(d,idx){ d.addEventListener('click',function(){ go(idx); start(); }); });
-  if(!window.matchMedia('(prefers-reduced-motion:reduce)').matches) start();
-})();
-</script>
 <script>
 (function(){var t=document.querySelector('.nav-toggle'),m=document.getElementById('mnav');if(!t||!m)return;
 t.addEventListener('click',function(){var o=m.classList.toggle('open');t.classList.toggle('open',o);t.setAttribute('aria-expanded',o);});
