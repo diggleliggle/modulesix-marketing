@@ -124,6 +124,9 @@
   .paper{background:var(--paper);color:var(--ink-2);}
   .paper .eyebrow{color:#9A7325;}
   .paper h2{color:var(--ink);}
+  .live-body{margin-top:26px;border:1px solid var(--line-light);border-left:3px solid var(--brass);border-radius:6px;background:var(--paper-2);padding:32px 34px 28px;}
+  .live-body h3{font-family:"Fraunces",serif;font-size:23px;color:var(--ink);margin:10px 0 12px;}
+  .live-body p{color:#46566e;font-size:16px;max-width:76ch;margin:0 0 20px;}
   .prod-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:46px;flex-wrap:wrap;}
   .prod-head .section-lede{color:var(--ink);}
   .prod-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
@@ -189,6 +192,21 @@
   .foot-blurb{color:var(--slate);font-size:14.5px;max-width:34ch;margin-top:18px;}
   .foot-bottom{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-top:26px;flex-wrap:wrap;}
   .foot-bottom small{color:var(--slate);font-size:13px;}
+
+  /* card alignment: name row, body and foot line up across every card in a row */
+  .prod{display:flex;flex-direction:column;}
+  .prod p{flex:1 1 auto;}
+  .prod-foot{margin-top:auto;}
+  @supports (grid-template-rows: subgrid){
+    .prod-grid{grid-template-rows:auto;}
+    .prod{display:grid;grid-template-rows:subgrid;grid-row:span 3;}
+    .prod p{flex:none;}
+  }
+
+  @supports (grid-template-rows: subgrid){
+    .diff-grid{grid-auto-rows:auto;}
+    .diff-cell{display:grid;grid-template-rows:subgrid;grid-row:span 3;align-content:start;}
+  }
 
   @media (max-width:900px){
     .hero-grid,.thesis .wrap,.split .wrap,.proof-grid{grid-template-columns:1fr;gap:40px;}
@@ -340,14 +358,20 @@
 
 <section class="paper">
   <div class="wrap">
-    <div class="reveal" style="max-width:60ch;margin-bottom:42px;"><p class="eyebrow dark-on-light">What we operate</p><h2 class="section-lede" style="color:var(--ink);">One ecosystem, six products.</h2></div>
+    <div class="reveal" style="max-width:60ch;margin-bottom:42px;"><p class="eyebrow dark-on-light">What we operate</p><h2 class="section-lede" style="color:var(--ink);">One ecosystem. Five products, and the body they run under.</h2></div>
     <div class="prod-grid">
-      <div class="prod reveal"><div class="prod-top"><span class="prod-name">IPP</span><span class="prod-tag">The body</span></div><p>The Institute of Project Professionals: governance, membership, designations and verification. The first vertical body running on the platform.</p><div class="prod-foot"><span class="who">For individuals</span><a class="prod-link" href="https://ipp.pro" target="_blank" rel="noopener">ipp.pro</a></div></div>
       <div class="prod reveal"><div class="prod-top"><span class="prod-name">Activate</span><span class="prod-tag">Qualify</span></div><p>Accredited qualification pathways and the exam engine that moves a member up the tiers, web and mobile.</p><div class="prod-foot"><span class="who">For members</span><a class="prod-link" href="https://activate.modulesix.io" target="_blank" rel="noopener">activate.modulesix.io</a></div></div>
       <div class="prod reveal"><div class="prod-top"><span class="prod-name">Educate</span><span class="prod-tag">Learn</span></div><p>Open courses, the widest way in, certified and logged as CPD onto the record.</p><div class="prod-foot"><span class="who">Individuals + orgs</span><a class="prod-link" href="courses.html">Educate</a></div></div>
       <div class="prod reveal"><div class="prod-top"><span class="prod-name">Calibrate</span><span class="prod-tag">The Passport</span></div><p>The portable competency record, free to individuals for life, and the employer management layer.</p><div class="prod-foot"><span class="who">Individuals + orgs</span><a class="prod-link" href="calibrate.html">Calibrate</a></div></div>
       <div class="prod reveal"><div class="prod-top"><span class="prod-name">Validate</span><span class="prod-tag">Comply</span></div><p>Authority to Work: a live register of the tickets, licences and safety competencies your people hold, and who is actually cleared to work. Employer-owned seats.</p><div class="prod-foot"><span class="who">For organisations</span><a class="prod-link" href="validate.html">Validate</a></div></div>
       <div class="prod reveal"><div class="prod-top"><span class="prod-name">Candidate</span><span class="prod-tag">Early access</span></div><p>Verified-talent profiles: the recruitment lens on a person's competency record. Discovered on what you can actually do, and hired against the same framework the rest of the ecosystem runs on.</p><div class="prod-foot"><span class="who">For individuals + recruiters</span><a class="prod-link" href="candidate.html">Candidate</a></div></div>
+    </div>
+
+    <div class="live-body reveal">
+      <p class="eyebrow dark-on-light">The live body</p>
+      <h3>IPP, the Institute of Project Professionals</h3>
+      <p>IPP is not a Module Six product. It is the first professional body running on the rails: its own governance, membership, designations and verification. IPP owns the standard. Module Six runs everything underneath it.</p>
+      <a class="prod-link" href="https://ipp.pro" target="_blank" rel="noopener">ipp.pro</a>
     </div>
   </div>
 </section>
@@ -396,7 +420,7 @@
         <p class="foot-blurb">The infrastructure behind modern professional bodies. We build the rails. The body owns the standard. The person owns the record.</p>
       </div>
       <div>
-        <h4>Products</h4>
+        <h4>The platform</h4>
         <a href="https://ipp.pro" target="_blank" rel="noopener">IPP</a>
         <a href="https://activate.modulesix.io" target="_blank" rel="noopener">Activate</a>
         <a href="https://educate.modulesix.io" target="_blank" rel="noopener">Educate</a>

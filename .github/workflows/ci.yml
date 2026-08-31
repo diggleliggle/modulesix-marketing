@@ -25,3 +25,9 @@ jobs:
       # real control; this is the backstop for anyone who did not enable it.
       - name: No real people in the repository
         run: node scripts/check-repo-personal-data.mjs
+
+      # A number published in more than one place goes stale in the places nobody
+      # edits. The Educate course count sat in seven spots across two pages.
+      # figures.json declares each such number once; this fails if a page drifts.
+      - name: Published figures agree with figures.json
+        run: node scripts/check-published-figures.mjs

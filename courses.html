@@ -190,6 +190,21 @@
   .foot-bottom{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-top:26px;flex-wrap:wrap;}
   .foot-bottom small{color:var(--slate);font-size:13px;}
 
+  /* card alignment: name row, body and foot line up across every card in a row */
+  .prod{display:flex;flex-direction:column;}
+  .prod p{flex:1 1 auto;}
+  .prod-foot{margin-top:auto;}
+  @supports (grid-template-rows: subgrid){
+    .prod-grid{grid-template-rows:auto;}
+    .prod{display:grid;grid-template-rows:subgrid;grid-row:span 3;}
+    .prod p{flex:none;}
+  }
+
+  @supports (grid-template-rows: subgrid){
+    .diff-grid{grid-auto-rows:auto;}
+    .diff-cell{display:grid;grid-template-rows:subgrid;grid-row:span 3;align-content:start;}
+  }
+
   @media (max-width:900px){
     .hero-grid,.thesis .wrap,.split .wrap,.proof-grid{grid-template-columns:1fr;gap:40px;}
     .hero-art{order:-1;max-width:460px;}
@@ -407,7 +422,7 @@
         <p class="foot-blurb">The infrastructure behind modern professional bodies. We build the rails. The body owns the standard. The person owns the record.</p>
       </div>
       <div>
-        <h4>Products</h4>
+        <h4>The platform</h4>
         <a href="https://ipp.pro" target="_blank" rel="noopener">IPP</a>
         <a href="https://activate.modulesix.io" target="_blank" rel="noopener">Activate</a>
         <a href="https://educate.modulesix.io" target="_blank" rel="noopener">Educate</a>

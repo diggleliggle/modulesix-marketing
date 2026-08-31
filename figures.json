@@ -1,0 +1,5 @@
+{
+  "note": "Numbers this site publishes more than once. Declared here, enforced by scripts/check-published-figures.mjs. Change the number here first, then run the script: it lists every page still carrying the old one. It cannot tell you the number is true, only that the site agrees with itself.",
+  "educateCourses": 15,
+  "products": 5
+}
