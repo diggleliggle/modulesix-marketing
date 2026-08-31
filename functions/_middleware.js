@@ -36,7 +36,26 @@ const REMOVED_BUT_CACHED = [
   '/courses/.ds_store',
 ];
 
+// MS-DAT-001 and MS-DAT-002 became MS-LEG-004 and MS-LEG-003 on 31 August 2026.
+// A retired reference is redirected, never deleted: recorded consents name
+// MS-DAT-002 and MS-DPA-001, and those citations have to resolve.
+const RETIRED_DOCS = {
+  '/assets/docs/ms-dat-001_privacy_notice_first_edition.pdf':
+    '/assets/docs/MS-LEG-004_Privacy_Notice_First_Edition.pdf',
+  '/assets/docs/ms-dat-002_data_processing_agreement_first_edition.pdf':
+    '/assets/docs/MS-LEG-003_Data_Processing_Agreement_First_Edition.pdf',
+};
+
+// MS-LEG-005 and MS-LEG-006 are internal control records. They are produced to a
+// customer's data protection officer, an auditor or the ICO on request, and they
+// are never served. MS-LEG-006 describes the security architecture.
+const NEVER_SERVED = [
+  '/assets/docs/ms-leg-005_record_of_processing_activities_first_edition.pdf',
+  '/assets/docs/ms-leg-006_security_and_data_protection_procedures_first_edition.pdf',
+];
+
 const BLOCKED_EXACT = [
+  ...NEVER_SERVED,
   ...REMOVED_BUT_CACHED,
   '/package.json',
   '/package-lock.json',
@@ -260,6 +279,15 @@ export async function onRequest(context) {
     BLOCKED_PREFIXES.some((p) => path.startsWith(p)) ||
     BLOCKED_EXACT.includes(path) ||
     BLOCKED_EXTENSIONS.some((e) => path.endsWith(e));
+
+  const retiredTo = RETIRED_DOCS[path];
+
+  if (retiredTo) {
+
+    return new Response(null, { status: 301, headers: { Location: retiredTo, 'Cache-Control': 'public, max-age=3600' } });
+
+  }
+
 
   if (blocked) {
     return new Response('Not found', {
