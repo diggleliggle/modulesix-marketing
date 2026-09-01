@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>For professional bodies: run one without building it | Module Six</title>
-<meta name="description" content="Credentialing, learning, competency and CPD as infrastructure for associations and founders. You own the standard. Module Six runs the rails.">
+<title>Professional body software: membership, credentialing and CPD</title>
+<meta name="description" content="Membership management, credentialing, qualifications and CPD as infrastructure for a professional body. You own the standard. We run the software.">
 <meta name="theme-color" content="#0B1626">
-<meta property="og:title" content="For professional bodies: run one without building it | Module Six">
-<meta property="og:description" content="Credentialing, learning, competency and CPD as infrastructure for associations and founders. You own the standard. Module Six runs the rails.">
+<meta property="og:title" content="Professional body software: membership, credentialing and CPD">
+<meta property="og:description" content="Membership management, credentialing, qualifications and CPD as infrastructure for a professional body. You own the standard. We run the software.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://modulesix.co.uk/for-bodies">
 <link rel="canonical" href="https://modulesix.co.uk/for-bodies">
@@ -194,6 +194,17 @@
   .aud ul{flex:1 1 auto;}
   .aud .btn{margin-top:auto;align-self:flex-start;}
 
+  /* FAQ */
+  .faq-list{border-top:1px solid var(--line-light);max-width:76ch;}
+  .faq-list details{border-bottom:1px solid var(--line-light);}
+  .faq-list summary{cursor:pointer;padding:18px 0;font-weight:600;color:var(--ink);font-size:17px;
+    list-style:none;display:flex;justify-content:space-between;gap:18px;align-items:baseline;}
+  .faq-list summary::-webkit-details-marker{display:none;}
+  .faq-list summary::after{content:"+";font-family:"IBM Plex Mono",monospace;color:var(--brass);flex:0 0 auto;}
+  .faq-list details[open] summary::after{content:"\2013";}
+  .faq-list summary:focus-visible{outline:2px solid var(--brass);outline-offset:3px;border-radius:3px;}
+  .faq-list .a{padding:0 0 20px;display:flex;flex-direction:column;gap:11px;color:#46566e;font-size:15.5px;max-width:70ch;}
+
   @media (max-width:900px){
     .hero-grid,.thesis .wrap,.split .wrap,.proof-grid{grid-template-columns:1fr;gap:40px;}
     .hero-art{order:-1;max-width:460px;}
@@ -338,9 +349,9 @@
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <p class="eyebrow reveal">For founders and bodies</p>
+      <p class="eyebrow reveal">Professional body software</p>
       <h1 class="reveal">Run a modern professional body, <span class="em">without building any of it</span>.</h1>
-      <p class="hero-sub reveal">Associations, would-be institutes and standards owners get the full stack as infrastructure: credentialing, learning, competency, CPD and a member-owned record. You bring the standard. We run the rails.</p>
+      <p class="hero-sub reveal">Professional body software for associations, would-be institutes and standards owners: membership management, credentialing, qualifications, competency assessment, CPD and a member-owned record, as infrastructure rather than a build project. You bring the standard and keep it. We run the software underneath it.</p>
       <div class="hero-cta reveal">
         <a class="btn btn-primary" href="index.html#contact">Talk to us about your body</a>
         <a class="btn btn-ghost" href="#model">See the model</a>
@@ -461,7 +472,7 @@
 <section class="split">
   <div class="wrap">
     <div class="aud reveal"><p class="eyebrow">What you bring</p><h2>Your standard and your members.</h2><ul><li>Your competency framework, designations and entry routes.</li><li>Your governance, your brand, your community.</li><li>The trust your profession already gives you.</li></ul></div>
-    <div class="aud reveal"><p class="eyebrow">What we run</p><h2>Everything underneath it.</h2><ul><li>Membership, qualifications, exams and CPD.</li><li>The competency record and the member-owned Passport.</li><li>Learning, billing, email and the employer platform.</li></ul><a class="btn btn-dark" href="index.html#contact">Start a conversation</a></div>
+    <div class="aud reveal"><p class="eyebrow">What we run</p><h2>The membership management and credentialing platform underneath it.</h2><ul><li>Membership, qualifications, exams and CPD.</li><li>The competency record and the member-owned Passport.</li><li>Learning, billing, email and the employer platform.</li></ul><a class="btn btn-dark" href="index.html#contact">Start a conversation</a></div>
   </div>
 </section>
 
@@ -476,6 +487,48 @@
       <div class="live-row"><span class="dot"></span><span><b>Validate</b> Authority to Work: live clearance register, role requirements, reminders and reports</span><span class="live-tag">Live</span></div>
       <div class="live-row"><span class="dot soon"></span><span><b>Candidate</b>, verified-talent profiles and the agency talent window</span><span class="live-tag soon">Early access</span></div>
     </div></div>
+  </div>
+</section>
+
+<section class="paper">
+  <div class="wrap">
+    <div class="reveal" style="max-width:60ch;margin-bottom:34px;">
+      <p class="eyebrow dark-on-light">Common questions</p>
+    </div>
+    <div class="faq-list reveal">
+      <details>
+        <summary>What is professional body software?</summary>
+        <div class="a">
+        <p>The systems a membership body needs in order to operate: membership management and renewals, grades and designations, credentialing and qualifications, competency assessment, CPD recording, a public register and certificate verification.</p>
+        <p>Most bodies assemble these from four or five separate tools that do not share a record. Module Six runs them as one platform on a single member record.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Can we start a new professional body on this?</summary>
+        <div class="a">
+        <p>Yes, and that is what it was built for. A new body typically needs eighteen months and a development budget before it can admit a single member. The rails here are already live and proven by a body running on them today, so the work becomes writing your standard and your governance rather than commissioning software.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Do we have to adopt IPP's standards or framework?</summary>
+        <div class="a">
+        <p>No. Your governance board owns your framework, your designations, your entry routes and every decision about who qualifies. Module Six never sets a profession's standard, and that independence is what makes your credential credible.</p>
+        <p>What is shared is the shape: a five-level scale and a common CPD and evidence model, so records stay comparable. The content is entirely yours.</p>
+        </div>
+      </details>
+      <details>
+        <summary>What do our members actually get?</summary>
+        <div class="a">
+        <p>A membership grade and verified post-nominals, a listing in your public register, qualification pathways with an exam engine, CPD recording, and a competency record they own for life and keep if they leave. That last part is the reason they fill it in honestly.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Who owns the member data?</summary>
+        <div class="a">
+        <p>Your body owns its membership and its standard. The individual owns their own competency record. Module Six operates the platform and does not white-label or fragment the record back into silos, which is a deliberate refusal rather than a missing feature.</p>
+        </div>
+      </details>
+    </div>
   </div>
 </section>
 

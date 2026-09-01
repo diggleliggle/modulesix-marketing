@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Educate: open courses that build your record | Module Six</title>
-<meta name="description" content="15 open courses, the widest way into the ecosystem. Certified completion that logs as CPD. From £20 a month, with B2B licences for employers.">
+<title>Project management CPD courses online | Educate</title>
+<meta name="description" content="15 open courses in project management, online and self-directed. Each earns a certificate and logs as CPD into your competency record. One free forever, then £20 a month.">
 <meta name="theme-color" content="#0B1626">
-<meta property="og:title" content="Educate: open courses that build your record | Module Six">
-<meta property="og:description" content="15 open courses, the widest way into the ecosystem. Certified completion that logs as CPD. From £20 a month, with B2B licences for employers.">
+<meta property="og:title" content="Project management CPD courses online | Educate">
+<meta property="og:description" content="15 open courses in project management, online and self-directed. Each earns a certificate and logs as CPD into your competency record. One free forever, then £20 a month.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://modulesix.co.uk/courses">
 <link rel="canonical" href="https://modulesix.co.uk/courses">
@@ -205,6 +205,17 @@
     .diff-cell{display:grid;grid-template-rows:subgrid;grid-row:span 3;align-content:start;}
   }
 
+  /* FAQ */
+  .faq-list{border-top:1px solid var(--line-light);max-width:76ch;}
+  .faq-list details{border-bottom:1px solid var(--line-light);}
+  .faq-list summary{cursor:pointer;padding:18px 0;font-weight:600;color:var(--ink);font-size:17px;
+    list-style:none;display:flex;justify-content:space-between;gap:18px;align-items:baseline;}
+  .faq-list summary::-webkit-details-marker{display:none;}
+  .faq-list summary::after{content:"+";font-family:"IBM Plex Mono",monospace;color:var(--brass);flex:0 0 auto;}
+  .faq-list details[open] summary::after{content:"\2013";}
+  .faq-list summary:focus-visible{outline:2px solid var(--brass);outline-offset:3px;border-radius:3px;}
+  .faq-list .a{padding:0 0 20px;display:flex;flex-direction:column;gap:11px;color:#46566e;font-size:15.5px;max-width:70ch;}
+
   @media (max-width:900px){
     .hero-grid,.thesis .wrap,.split .wrap,.proof-grid{grid-template-columns:1fr;gap:40px;}
     .hero-art{order:-1;max-width:460px;}
@@ -349,9 +360,9 @@
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <p class="eyebrow reveal">Educate &middot; open learning</p>
+      <p class="eyebrow reveal">Educate &middot; project management CPD courses</p>
       <h1 class="reveal">Learning that <span class="em">builds your record</span>.</h1>
-      <p class="hero-sub reveal">Educate is the widest way into the ecosystem: 15 open, self-directed courses, no membership needed. Every course earns a certificate and logs as CPD straight onto your Calibrate record.</p>
+      <p class="hero-sub reveal">Educate is online project management training built for continuing professional development: 15 open, self-directed courses, no membership needed. Every course earns a certificate and logs as CPD straight onto your competency record.</p>
       <div class="hero-cta reveal">
         <a class="btn btn-primary" href="https://educate.modulesix.io" target="_blank" rel="noopener">Browse the catalogue</a>
         <a class="btn btn-ghost" href="#business">For business</a>
@@ -407,6 +418,46 @@
     </tbody></table>
       <p style="margin-top:0.9rem;font-size:0.78rem;color:#64748b">All prices are final. No VAT is added: Module Six is not currently VAT registered.</p>
     <p class="pnote reveal"><a href="calibrate.html" style="color:#9A7325;">See the employer platform &rarr;</a></p>
+  </div>
+</section>
+
+<section class="paper">
+  <div class="wrap">
+    <div class="reveal" style="max-width:60ch;margin-bottom:34px;">
+      <p class="eyebrow dark-on-light">Common questions</p>
+    </div>
+    <div class="faq-list reveal">
+      <details>
+        <summary>Do the courses count as CPD?</summary>
+        <div class="a">
+        <p>Yes. Every course earns a certificate on completion and logs the hours straight onto your competency record, against the competency it supports rather than in a separate list. If your body requires a set number of CPD hours a year, these count towards it.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Do I need to be a member of anything?</summary>
+        <div class="a">
+        <p>No. Educate is open. No membership, no professional body, no application. It is the widest way in, and one course is free permanently so you can see the standard before paying anything.</p>
+        </div>
+      </details>
+      <details>
+        <summary>What subjects are covered?</summary>
+        <div class="a">
+        <p>Project management practice across planning and scheduling, risk, governance, budgeting and cost, stakeholders, requirements and benefits, quality and assurance, change, agile, teams, sponsoring and sustainability.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Is there a certificate?</summary>
+        <div class="a">
+        <p>Yes, a Certificate of Achievement per course, and the completion is recorded on your competency record where an employer running Calibrate can see it as verified rather than claimed.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Can we buy this for a team?</summary>
+        <div class="a">
+        <p>Yes. Educate is sold to employers as licences you allocate to your people, with completion and CPD compliance visible in the team report.</p>
+        </div>
+      </details>
+    </div>
   </div>
 </section>
 
