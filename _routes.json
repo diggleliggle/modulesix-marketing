@@ -47,7 +47,9 @@
     "/privacy.html",
     "/dpa",
     "/terms.html",
-    "/terms"
+    "/terms",
+    "/assets/docs/MS-LEG-005_Record_of_Processing_Activities_First_Edition.pdf",
+    "/assets/docs/MS-LEG-006_Security_and_Data_Protection_Procedures_First_Edition.pdf"
   ],
   "exclude": []
 }
