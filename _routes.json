@@ -45,7 +45,9 @@
     "/dpa.html",
     "/privacy",
     "/privacy.html",
-    "/dpa"
+    "/dpa",
+    "/terms.html",
+    "/terms"
   ],
   "exclude": []
 }
