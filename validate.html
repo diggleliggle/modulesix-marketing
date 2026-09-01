@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Validate: Authority to Work compliance | Module Six</title>
-<meta name="description" content="Validate is a live register of every ticket, licence and safety competency your people hold, whether each is in date, and therefore who is actually cleared to work. It never claims clearance it cannot stand behind. Employer-owned seats from &pound;21 per person per year.">
+<title>Validate: workforce compliance and Authority to Work software</title>
+<meta name="description" content="Workforce compliance software tracking every ticket, licence and safety-critical competency your people hold, whether each is in date, and exactly who is cleared to work today.">
 <meta name="theme-color" content="#0B1626">
-<meta property="og:title" content="Validate: Authority to Work compliance | Module Six">
-<meta property="og:description" content="Validate is a live register of every ticket, licence and safety competency your people hold, whether each is in date, and therefore who is actually cleared to work. It never claims clearance it cannot stand behind. Employer-owned seats from &pound;21 per person per year.">
+<meta property="og:title" content="Validate: workforce compliance and Authority to Work software">
+<meta property="og:description" content="Workforce compliance software tracking every ticket, licence and safety-critical competency your people hold, whether each is in date, and exactly who is cleared to work today.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://modulesix.co.uk/validate">
 <link rel="canonical" href="https://modulesix.co.uk/validate">
@@ -200,6 +200,17 @@
     .prod p{flex:none;}
   }
 
+  /* FAQ */
+  .faq-list{border-top:1px solid var(--line-light);max-width:76ch;}
+  .faq-list details{border-bottom:1px solid var(--line-light);}
+  .faq-list summary{cursor:pointer;padding:18px 0;font-weight:600;color:var(--ink);font-size:17px;
+    list-style:none;display:flex;justify-content:space-between;gap:18px;align-items:baseline;}
+  .faq-list summary::-webkit-details-marker{display:none;}
+  .faq-list summary::after{content:"+";font-family:"IBM Plex Mono",monospace;color:var(--brass);flex:0 0 auto;}
+  .faq-list details[open] summary::after{content:"\2013";}
+  .faq-list summary:focus-visible{outline:2px solid var(--brass);outline-offset:3px;border-radius:3px;}
+  .faq-list .a{padding:0 0 20px;display:flex;flex-direction:column;gap:11px;color:#46566e;font-size:15.5px;max-width:70ch;}
+
   @media (max-width:900px){
     .hero-grid,.thesis .wrap,.split .wrap,.proof-grid{grid-template-columns:1fr;gap:40px;}
     .hero-art{order:-1;max-width:460px;}
@@ -382,9 +393,9 @@
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <p class="eyebrow reveal">Validate &middot; for employers</p>
+      <p class="eyebrow reveal">Validate &middot; workforce compliance software</p>
       <h1 class="reveal">Know exactly who is <span class="em">cleared to work</span>.</h1>
-      <p class="hero-sub reveal">Validate is a live register of every ticket, licence and safety competency your people hold, whether each is in date, and therefore who is actually cleared to work today. It never claims clearance it cannot stand behind.</p>
+      <p class="hero-sub reveal">Validate is workforce compliance software: a live register of every ticket, licence, certification and safety-critical competency your people hold, whether each is in date, and therefore who is actually cleared to work today. It replaces the training matrix spreadsheet and the reminder nobody sent. It never claims clearance it cannot stand behind.</p>
       <div class="hero-cta reveal">
         <a class="btn btn-primary" href="https://validate.modulesix.io" target="_blank" rel="noopener">Stand up your register</a>
         <a class="btn btn-ghost" href="#pricing">See pricing</a>
@@ -451,6 +462,48 @@
       <div class="prod reveal"><div class="prod-top"><span class="prod-name">What a seat is</span><span class="prod-tag">Employer-owned</span></div><p>A Validate seat is Authority to Work access owned by you. It does not travel with the person and a leaver loses it, which is exactly what a compliance register needs. Staging people onto the register costs nothing, however many you hold. A seat is for anyone who signs in, whether they use the full compliance workspace or only their own Authority to Work.</p><div class="prod-foot"><span class="who">Opposite of the Passport, by design</span></div></div>
     </div>
     <p class="pnote reveal">Prices shown are the per-seat rate for the whole basket at that band. Hold Validate alongside Calibrate and the people who hold both attract an ecosystem discount at checkout. Over 1000 people, or want an invoice? The shop handles invoicing at <a href="https://shop.modulesix.io/?mode=business" target="_blank" rel="noopener">shop.modulesix.io</a>, or talk to us.</p>
+  </div>
+</section>
+
+<section class="paper">
+  <div class="wrap">
+    <div class="reveal" style="max-width:60ch;margin-bottom:34px;">
+      <p class="eyebrow dark-on-light">Common questions</p>
+    </div>
+    <div class="faq-list reveal">
+      <details>
+        <summary>What is Authority to Work?</summary>
+        <div class="a">
+        <p>Authority to Work is the question of whether a named person is cleared to do a specific job today: whether they hold the ticket, licence or certification the task requires, and whether it is still in date. Validate keeps that answer live for a whole workforce.</p>
+        </div>
+      </details>
+      <details>
+        <summary>How is this different from a training matrix?</summary>
+        <div class="a">
+        <p>A training matrix records what people have completed. It goes stale the day it is printed and it tells you nothing about expiry until somebody re-reads every row.</p>
+        <p>Validate holds expiry dates, sends the reminders, and answers the operational question directly: who is cleared right now, and who is not. It will not round up: if the evidence is missing or out of date, it says so rather than assuming.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Do we need IPP or any of the other products to use it?</summary>
+        <div class="a">
+        <p>No. Validate is a standalone workforce compliance product bought by an employer for its own workforce. It needs no membership, no professional body and no other Module Six product.</p>
+        <p>The records are your organisation's records about your own people. For those, your organisation is the data controller and Module Six is your processor, under the agreement at modulesix.co.uk/dpa.</p>
+        </div>
+      </details>
+      <details>
+        <summary>What kinds of competency can it track?</summary>
+        <div class="a">
+        <p>Any certification with a holder and an expiry: safety-critical tickets, plant and machinery licences, site inductions, medical and screening clearances, security vetting, and role requirements defined by you.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Can a contractor or consultant appear on the register?</summary>
+        <div class="a">
+        <p>Yes. The register is about who is cleared to do work for you, not who is on your payroll.</p>
+        </div>
+      </details>
+    </div>
   </div>
 </section>
 

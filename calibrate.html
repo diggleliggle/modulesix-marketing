@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Calibrate for employers: workforce competence, verified | Module Six</title>
-<meta name="description" content="Calibrate is the competency and CPD platform for managing your workforce’s real capability. A ready-made framework aligned to IPP governance, tailorable to your own or another body’s. Team heat map, People Tools, consultant deployments. Seats from £21.">
+<title>Calibrate: competency management and CPD software | Module Six</title>
+<meta name="description" content="Competency management and CPD tracking software for project-driven teams. Bring your own competency framework or use ours. Live skills matrix and team heat maps.">
 <meta name="theme-color" content="#0B1626">
-<meta property="og:title" content="Calibrate for employers: workforce competence, verified | Module Six">
-<meta property="og:description" content="Calibrate is the competency and CPD platform for managing your workforce’s real capability. A ready-made framework aligned to IPP governance, tailorable to your own or another body’s. Team heat map, People Tools, consultant deployments. Seats from £21.">
+<meta property="og:title" content="Calibrate: competency management and CPD software | Module Six">
+<meta property="og:description" content="Competency management and CPD tracking software for project-driven teams. Bring your own competency framework or use ours. Live skills matrix and team heat maps.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://modulesix.co.uk/calibrate">
 <link rel="canonical" href="https://modulesix.co.uk/calibrate">
@@ -200,6 +200,17 @@
     .prod p{flex:none;}
   }
 
+  /* FAQ */
+  .faq-list{border-top:1px solid var(--line-light);max-width:76ch;}
+  .faq-list details{border-bottom:1px solid var(--line-light);}
+  .faq-list summary{cursor:pointer;padding:18px 0;font-weight:600;color:var(--ink);font-size:17px;
+    list-style:none;display:flex;justify-content:space-between;gap:18px;align-items:baseline;}
+  .faq-list summary::-webkit-details-marker{display:none;}
+  .faq-list summary::after{content:"+";font-family:"IBM Plex Mono",monospace;color:var(--brass);flex:0 0 auto;}
+  .faq-list details[open] summary::after{content:"\2013";}
+  .faq-list summary:focus-visible{outline:2px solid var(--brass);outline-offset:3px;border-radius:3px;}
+  .faq-list .a{padding:0 0 20px;display:flex;flex-direction:column;gap:11px;color:#46566e;font-size:15.5px;max-width:70ch;}
+
   @media (max-width:900px){
     .hero-grid,.thesis .wrap,.split .wrap,.proof-grid{grid-template-columns:1fr;gap:40px;}
     .hero-art{order:-1;max-width:460px;}
@@ -382,9 +393,9 @@
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <p class="eyebrow reveal">Calibrate &middot; for employers</p>
+      <p class="eyebrow reveal">Calibrate &middot; competency management software</p>
       <h1 class="reveal">See your workforce's <span class="em">real competence</span>, not their CVs.</h1>
-      <p class="hero-sub reveal">Calibrate is the competency and CPD platform your people are already credentialed on. The individual record is free, owned for life. You buy seats for the management layer and manage capability from one place.</p>
+      <p class="hero-sub reveal">Calibrate is competency management and CPD tracking software for project-driven organisations. Assess your people against a competency framework, see the whole team as a live skills matrix, and manage development from one place. Bring your own framework or start from ours. The individual record is free and owned for life; you buy seats for the management layer.</p>
       <div class="hero-cta reveal">
         <a class="btn btn-primary" href="https://calibrate.modulesix.io/start.html" target="_blank" rel="noopener">Start a 30-day trial</a>
         <a class="btn btn-ghost" href="#pricing">See pricing</a>
@@ -399,7 +410,7 @@
   <div class="wrap">
     <div class="reveal" style="max-width:60ch;margin-bottom:42px;">
       <p class="eyebrow dark-on-light">What you get</p>
-      <h2 class="section-lede" style="color:var(--ink);">A management layer built on verified data.</h2>
+      <h2 class="section-lede" style="color:var(--ink);">A competency management layer built on verified data.</h2>
     </div>
     <div class="prod-grid">
       <div class="prod reveal"><div class="prod-top"><span class="prod-name">Team report</span><span class="prod-tag">Insight</span></div><p>Seat utilisation, an eight-area competency heat map, CPD compliance, the validation queue and a member summary. PDF export and copy-as-text.</p><div class="prod-foot"><span class="who">For admins</span></div></div>
@@ -439,6 +450,49 @@
       </div>
     </div>
     <p class="pnote reveal">The individual Calibrate record is always free. Self-serve up to any band; for 51 seats and above, talk to us for assisted onboarding and an invoice. Want the ready-made project-management standard, live and buyable today? That runs through IPP at <a href="https://ipp.pro/employers" target="_blank" rel="noopener">ipp.pro/employers</a>.</p>
+  </div>
+</section>
+
+<section class="paper">
+  <div class="wrap">
+    <div class="reveal" style="max-width:60ch;margin-bottom:34px;">
+      <p class="eyebrow dark-on-light">Common questions</p>
+    </div>
+    <div class="faq-list reveal">
+      <details>
+        <summary>What is competency management software?</summary>
+        <div class="a">
+        <p>A competency management system records what each person in a team can actually do, assessed against a defined competency framework rather than inferred from a job title or a course certificate. Calibrate rates every person across eight areas and forty-four elements on a five-level scale, marks each level as self-assessed or independently validated, and rolls the whole team up into a live skills matrix.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Do we have to use IPP's competency framework?</summary>
+        <div class="a">
+        <p>No. Calibrate ships with a ready-made framework so you are not starting from a blank page, but the areas and elements are configurable and you can run your own, or another body's.</p>
+        <p>Calibrate works perfectly well for an organisation with no connection to IPP at all. The shared structure, a five-level scale and a common CPD and evidence model, is what makes records comparable; the content of the framework is yours.</p>
+        </div>
+      </details>
+      <details>
+        <summary>How is this different from a skills matrix in a spreadsheet?</summary>
+        <div class="a">
+        <p>A spreadsheet records what somebody typed. Calibrate separates what a person claims from what a reviewer has confirmed, and never lets one be presented as the other.</p>
+        <p>It also maintains itself. CPD logged against a competency updates the record, a passed exam seeds the starting levels, and the heat map reflects it without anybody rebuilding the sheet.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Does CPD tracking come with it?</summary>
+        <div class="a">
+        <p>Yes. CPD is logged against the competency it supports rather than in a separate list, so the evidence sits with the claim. Team CPD compliance appears in the team report.</p>
+        </div>
+      </details>
+      <details>
+        <summary>What happens to a person's record when they leave?</summary>
+        <div class="a">
+        <p>They keep it. The individual competency record is free and owned for life, so it travels with them to their next employer. You keep the seat and reassign it.</p>
+        <p>This is deliberate and it is the reason people fill it in honestly.</p>
+        </div>
+      </details>
+    </div>
   </div>
 </section>
 
